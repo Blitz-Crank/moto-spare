@@ -4,14 +4,17 @@
 
 var saleForm = document.getElementById('saleForm');
 var itemsList = document.getElementById('items');
+var itemsInfo = document.getElementById('itemsInfo');
+
 
 
 // constructor function to create a basic drink
-function StoreItems(name, phone, itemName, prise){
+function StoreItems(name, phone, itemName, prise , itemPhoto){
   this.name = name;
   this.phone = phone;
   this.itemName = itemName;
   this.prise = prise;
+  this.itemPhoto=itemPhoto;
 
   // add every drink that gets created into an array
   StoreItems.itemsArray.push(this);
@@ -34,8 +37,9 @@ function handleSubmit(event){
   var phone = part.phone.value;
   var itemName = part.itemName.value;
   var prise  = part.prise.value;
+  var itemPhoto = part.itemPhoto.value;
 
-  new StoreItems(name, phone, itemName, prise);
+  new StoreItems(name, phone, itemName, prise,itemPhoto);
   console.log(StoreItems.itemsArray);
   // update the previous orders with the new order
   renderOrders();
@@ -55,24 +59,42 @@ function getItem(){
   if(newItem){
     var newItem = localStorage.getItem('newItem');
     StoreItems.itemsArray = JSON.parse(newItem);
-    renderOrders();
   }
 }
 function renderOrders(){
-  // clear all my current uls to prevent duplicate information
-  //itemsList.textContent = '';
 
-  // go through the array and output the details of each drink in the array
-  for(var i=0; i < StoreItems.itemsArray; i++){
-    var itemsLI = document.createElement('li');
-    var infoP = document.createElement('p');
-    console.log();
-    infoP.textContent = `${StoreItems.itemsArray[i].name} put ${StoreItems.itemsArray[i].itemName} WITH PRICE : ${StoreItems.itemsArray[i].prise} and your phone number is  ${StoreItems.itemsArray[i].phone}`;
-    itemsLI.appendChild(infoP);
-    itemsList.appendChild(itemsLI);
-  }
+  var itemsLI = document.createElement('li');
+  var img = document.createElement('img');
+  img.setAttribute('src',StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
+  itemsLI.appendChild(img);
+  itemsList.appendChild(itemsLI);
+
+  var infoOl = document.createElement('ol');
+
+  var nameLi = document.createElement('li');
+  nameLi.textContent=StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemName;
+  infoOl.appendChild(nameLi);
+
+  var priseLi = document.createElement('li');
+  priseLi.textContent=`prise = ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].prise}`;
+  infoOl.appendChild(priseLi);
+  
+
+  var addToCart = document.createElement('li');
+  var Addbutton = document.createElement('button');
+  Addbutton.textContent='Add TO Cart';
+
+  infoOl.appendChild(addToCart);
+  addToCart.appendChild(Addbutton);
+  itemsLI.appendChild(infoOl);
+
+
+
+
 }
+
 
 // Add an event listener to the submit button
 saleForm.addEventListener('submit', handleSubmit);
 getItem();
+

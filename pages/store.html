@@ -27,6 +27,8 @@
             <input type="text" name="itemName" placeholder="">
           <label>Prise</label>
             <input type="text" name="prise" placeholder="">
+          <label for="itemPhoto">Select an Image:</label>
+           <input type="file" id="itemPhoto" name="itemPhoto">
         
     
             <button type="submit" class="submitButton">Submit </button>
@@ -35,10 +37,22 @@
     
       </form>
       <div class="items-list">
-        <h3> Previous Orders</h3>
+        <h3> Items</h3>
         <ul id="items">
-    
-        </ul>
+          <li>
+            <img id="pic" src="https://i1.adis.ws/i/washford/548638/Halfords--096AGM-Start/Stop-AGM-12V-Car-Battery-5-Year-Guarantee?$sfcc_tile$&w=340" alt="">
+            <ol> <li> Item Name : battary</li>
+
+              <li>price : 10jd</li> 
+
+            <li> <button>Add TO Cart</button></li> </ol>
+         
+          </li>
+            
+         </ul>
+      </div>
+      <div class="itemsInfo" id="itemsInfo">
+       
       </div>
     </header>
 
@@ -48,6 +62,7 @@
 function displayForm() {
     document.getElementById('saleForm').style.display = 'block';
   }
+ 
 </script>
   <script src="../js/store.js"></script>
 </body>
