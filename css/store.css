@@ -64,12 +64,52 @@
 
 
 
+li img {
+    height: 100px ;
+    width: 100px;
+    cursor: pointer;
+
+
+}
+
+ ol { 
+    display: none;
+}
+
+ul li:hover ol 
+   {
+       display: block ;
+}
+
+
+/* .items{
+   display: inline-block;
+
+} */
 
 
 
-
-
-
+.itemsInfo{
+    color: #fff;
+    float: left;
+    position: relative;
+    margin: 70px auto 0;
+    /* display: block; */
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px 0;
+    border-radius: 50px;
+    /* display : none; */
+}
+pre{
+    z-index: 9999;
+    text-align: left;
+}
+/* 
+#pic:hover {
+    displayInfo();
+} */
 
 body{
     font-family: sans-serif;
@@ -104,12 +144,15 @@ body{
     position: relative;
     margin: 10px auto 0;
     display: block;
-    width: 700px;
+    width: 300px;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 40px 0;
     border-radius: 50px;
   
+  }
+  ol li {
+      padding: px;
   }
   h3{
     font-size: 30px;
