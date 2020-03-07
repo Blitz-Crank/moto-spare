@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/store.css">
+</head>
+<body>
+  <main>
+    <header class="coffee-bg">
+      <h1 class="logo">logo </h1>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>something</li>
+          <li>something</li>
+        </ul>
+      </nav>
+      <button class="buttonpluse" onclick="displayForm()">+</button>
+      <form id="saleForm"> 
+        <fieldset>
+          <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter your Name">
+          <label>Phone Number</label>
+            <input type="text" name="phone" placeholder="Enter your Phone Number">
+          <label>Item</label>
+            <input type="text" name="itemName" placeholder="">
+          <label>Prise</label>
+            <input type="text" name="prise" placeholder="">
+        
+    
+            <button type="submit" class="submitButton">Submit </button>
+    
+          </fieldset>
+    
+      </form>
+      <div class="items-list">
+        <h3> Previous Orders</h3>
+        <ul id="items">
+    
+        </ul>
+      </div>
+    </header>
+
+
+</main>
+<script>
+function displayForm() {
+    document.getElementById('saleForm').style.display = 'block';
+  }
+</script>
+  <script src="../js/store.js"></script>
+</body>
+</html>

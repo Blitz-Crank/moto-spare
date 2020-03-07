@@ -1,0 +1,192 @@
+
+
+
+
+
+
+
+
+
+
+  .submitButton{
+    background-color: #80423d;
+    padding: 10px 36px;
+    margin: 18px 0;
+    float: right;
+    box-shadow: -1px -1px 8px #80423d;
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+    border: 1px solid #80423d;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    outline: none;
+
+  }
+
+  .buttonpluse {
+    background-color: burlywood;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: black;
+    clear: both;
+    padding: 10px 20px;
+    margin: 0;
+    max-width: 350px;
+    z-index: 9999;
+    float: right;
+    position: relative;
+    font-size: x-large;
+    transition: all 0.5s ease-in-out;
+    outline: none;
+    }
+
+    
+
+    #saleForm{
+        clear: both;
+        padding: 20px 40px;
+        margin: 0;
+        max-width: 350px;
+        z-index: 9999;
+        float: right;
+        position: relative;
+        display: none;
+      }
+
+
+
+
+
+
+
+
+
+
+body{
+    font-family: sans-serif;
+  }
+  .coffee-bg {
+    /* background-image: url('../images/coffee.jpg'); */
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+  }
+  .coffee-bg:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9;
+    height: 700px;
+  
+  }
+  .items-list h3{
+    margin: 0 30px;
+  }
+  .items-list {
+    color: #fff;
+    float: left;
+    position: relative;
+    margin: 10px auto 0;
+    display: block;
+    width: 700px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px 0;
+    border-radius: 50px;
+  
+  }
+  h3{
+    font-size: 30px;
+  }
+  #items {
+    padding: 10px 0px;
+    list-style-type: circle;
+    text-align: left;
+    padding: 15px 53px;
+  }
+  .logo {
+    float: left;
+    color: #fff;
+    font-size: 55px;
+    font-family: sans-serif;
+    letter-spacing: -5.9px;
+    z-index: 9999;
+    position: relative;
+  }
+  header{
+    padding: 30px 30px;
+  }
+  header nav{
+    float: right;
+    z-index: 9999;
+    position: relative;
+  }
+  header nav ul li{
+    display: inline-block;
+    color: #ffe4da;
+    padding: 10px 30px;
+  }
+ 
+  header nav ul li {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 23px;
+    font-family: sans-serif;
+    color: #ffe4da;
+    letter-spacing: 3px;
+  }
+  #saleForm label {
+    color: #fff;
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: -1.6px;
+  }
+  #saleForm input , #saleForm select {
+    padding: 8px 20px;
+    width: 300px;
+  }
+  #saleForm select{
+    height: 36px;
+    width: 344px;
+  }
+  #items li {
+    padding: 10px 0;
+    font-size: 17px;
+    color: #ffbaba;
+  }
+  #saleForm input[type="checkbox"]{
+    width: inherit;
+  }
+  input[type="checkbox"]:before {
+    width: 20px;
+    height: 20px;
+  }
+  #saleForm .isHotlabel {
+    display: inline-block;
+  }
+  button {
+  
+  }
+  button:hover{
+    background-color: #1b2b2a;
+    border: 1px solid #1b2b2a;
+  
+  }
