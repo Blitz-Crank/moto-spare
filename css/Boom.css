@@ -1,0 +1,190 @@
+div#cont {
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 700px;
+}
+.main {
+    /* animation-play-state: running; */
+    position: absolute;
+    top: 37%;
+    left: 41%;
+    /* animation-name: crached; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-duration: 3s; */
+    /* animation-delay: 1s; */
+    /* animation-fill-mode: forwards; */
+}
+.topl {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    /* display: none; */
+    animation-name: tl;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.topr {
+    right: -16%;
+    position: absolute;
+    top: 36%;
+    /* left: 0; */
+    /* display: none; */
+    animation-name: tr;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.botl {
+    position: absolute;
+    top: 36%;
+    left: 0;
+    /* display: none; */
+    animation-name: tl;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 4.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.botr {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    /* display: none; */
+    animation-name: br;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+/* @keyframes crached{
+    0%{
+        display: inline-block;
+        transform:none;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        transform: scale(12,12);
+        opacity: 0;
+        display: none;
+    }
+
+} */
+
+@keyframes tl{
+  0%{
+/* display: none; */
+transform:scale(7,7);
+opacity: 0;
+  }
+  50%{
+      opacity: .5;
+  }
+  100%{
+      transform: none;
+      opacity: 1;
+      /* display: inline; */
+  }
+
+}
+@keyframes bl{
+0%{
+/* display: none; */
+transform:scale(7,7);
+opacity: 0;
+}
+50%{
+    opacity: .5;
+}
+100%{
+    transform: none;
+    opacity: 1;
+    /* display: inline; */
+}
+
+}
+@keyframes tr{
+0%{
+/* display: none; */
+transform:scale(7,7);
+opacity: 0;
+}
+50%{
+    opacity: .5;
+}
+100%{
+    transform: none;
+    opacity: 1;
+    /* display: inline; */
+}
+
+}
+@keyframes br{
+0%{
+/* display: none; */
+    transform:scale(7,7);
+    opacity: 0;
+}
+50%{
+    opacity: .5;
+}
+100%{
+    transform: none;
+    opacity: 1;
+    /* display: inline; */
+}
+
+}
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid #F1F1F1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
