@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Store</title>
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/store.css">
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Changa|Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Simonetta:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet"> 
+  
+    <title>Store</title>
+  
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/store.css">
+    <link rel="stylesheet" href="../css/headFoot.css">
 </head>
+<header>
+  <h1>MotoSpare</h1>
+  <img class="logo" src="../img/logo_new.png" alt="logo">
+  <ul class="hover-a">
+  <li><a href="">Home</a></li>
+  <li><a href="">Store</a></li>
+  <li><a href="">Sale</a></li>
+  <li><a href="">About Us</a></li></ul>
+
+</header>
 <body>
   <main>
-    <header class="coffee-bg">
+    <div class="store-bg">
       <h1 class="logo">logo </h1>
       <nav>
         <ul>
@@ -36,28 +60,87 @@
           </fieldset>
     
       </form>
-      <div class="items-list">
+      <div class="items-list" id="itemsDiv">
         <h3> Items</h3>
         <ul id="items">
           <li>
-            <img id="pic" src="https://i1.adis.ws/i/washford/548638/Halfords--096AGM-Start/Stop-AGM-12V-Car-Battery-5-Year-Guarantee?$sfcc_tile$&w=340" alt="">
-            <ol> <li> Item Name : battary</li>
-
-              <li>price : 10jd</li> 
-
-            <li> <button>Add TO Cart</button></li> </ol>
-         
+            <img id="pic" src="../images/motor.jpg" alt="motor">
+            <p> Item Name : Motor</p>
+                 <p> price : 50jd</p> 
+                 <p> contact with saler : 078523694</p>
+                 <p> <button>Add TO Cart</button></p> 
+          </li>
+          <li>
+            <img id="pic" src="../images/battery.jpg" alt="CarBattery">
+                 <p> Item Name : Battary</p>
+                 <p> price : 10jd</p> 
+                 <p> contact with saler : 078523694</p>
+                 <p> <button>Add TO Cart</button></p> 
+          </li>
+          <li>
+            <img id="pic" src="../images/radio.jpg" alt="radio">
+                 <p> Item Name : Radio</p>
+                 <p> price : 20jd</p> 
+                 <p> contact with saler : 078523694</p>
+                 <p> <button>Add TO Cart</button></p> 
+          </li>
+          <li>
+            <img id="pic" src="../images/weels.png" alt="weels">
+                 <p> Item Name : Weels</p>
+                 <p> price : 30jd</p> 
+                 <p> contact with saler : 078523694</p>
+                 <p> <button>Add TO Cart</button></p> 
           </li>
             
          </ul>
-      </div>
-      <div class="itemsInfo" id="itemsInfo">
-       
-      </div>
-    </header>
+        </div>
+    </div>
 
 
 </main>
+<footer>
+  <section class="lastSection text">
+    <div class="footLogo">
+    
+         <img class= 'bottomlogo' src="../img/logo_new.png" alt="logo"/>
+         <h2>
+          MotoSpare
+        </h2>
+    </div>
+    <div class=" aboutAs" >
+        <ol> <h5>Meet the developers </h5>
+            <li><a href="">Israa Othman</a></li>
+            <li><a href="">Omar Alawi</a></li>
+            <li><a href="">Raghad Alquran</a></li>
+            <li><a href="">Yousef Alshun</a></li>
+        </ol>
+
+    </div>
+    <div class="contact">
+        <ol><h5> Contact Us</h5>
+            <li>Phone Number :+962 785311513</li>
+            <li>Email : blitzCrank@gmail.com </li>
+            
+        </ol>
+    </div>
+    <div class="socialMedia">
+        <ol> <h5>Follow Us </h5>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-google"></a></li>            
+        </ol>
+    </div>
+         
+</section>
+<span  class="blackBackground  text tail">
+<ol class="black">
+    <li>© 2020 Moto Spare, Inc.</li>
+    <li>Privacy Policy</li>
+    <li>Alpha version </li>
+</ol>
+</span>     
+
+ </footer>
 <script>
 function displayForm() {
     document.getElementById('saleForm').style.display = 'block';

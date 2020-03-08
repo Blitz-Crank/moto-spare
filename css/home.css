@@ -6,6 +6,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     width : 100%;
+    position: relative;
     height:1000px;
   
 }
@@ -31,7 +32,7 @@ h1{
     margin-top: -42px;
     margin-bottom: 20px;
     margin-left: 999px;}
-li {
+ul li {
     display: inline;
     padding: 23px;
     color:white;

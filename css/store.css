@@ -65,18 +65,17 @@
 
 
 li img {
-    height: 100px ;
-    width: 100px;
+    height: 150px ;
+    width: 150px;
     cursor: pointer;
-
-
+    padding-left: 22px;
 }
 
- ol { 
+ p { 
     display: none;
 }
 
-ul li:hover ol 
+ul li:hover p 
    {
        display: block ;
 }
@@ -113,8 +112,9 @@ pre{
 
 body{
     font-family: sans-serif;
+    position: relative;
   }
-  .coffee-bg {
+  .store-bg {
     /* background-image: url('../images/coffee.jpg'); */
     background-size: cover;
     height: 700px;
@@ -122,7 +122,7 @@ body{
     background-attachment: fixed;
     position: relative;
   }
-  .coffee-bg:after {
+  .store-bg:after {
     content: "";
     background-color: rgba(0, 0, 0, 0.6);
     opacity: 0.5;
@@ -144,16 +144,14 @@ body{
     position: relative;
     margin: 10px auto 0;
     display: block;
-    width: 300px;
+    width: 1100px;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 40px 0;
     border-radius: 50px;
   
   }
-  ol li {
-      padding: px;
-  }
+ 
   h3{
     font-size: 30px;
   }
@@ -162,6 +160,8 @@ body{
     list-style-type: circle;
     text-align: left;
     padding: 15px 53px;
+   
+    width: 1000px;
   }
   .logo {
     float: left;
@@ -172,21 +172,21 @@ body{
     z-index: 9999;
     position: relative;
   }
-  header{
+  div{
     padding: 30px 30px;
   }
-  header nav{
+  div nav{
     float: right;
     z-index: 9999;
     position: relative;
   }
-  header nav ul li{
+  div nav ul li{
     display: inline-block;
     color: #ffe4da;
     padding: 10px 30px;
   }
  
-  header nav ul li {
+  div nav ul li {
     display: inline-block;
     padding: 10px 30px;
     font-size: 23px;
@@ -214,7 +214,13 @@ body{
     padding: 10px 0;
     font-size: 17px;
     color: #ffbaba;
+    display: inline-block;
   }
+  ol li {
+    display: block;
+    padding: 0px;
+  }
+  
   #saleForm input[type="checkbox"]{
     width: inherit;
   }
