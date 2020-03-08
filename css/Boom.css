@@ -148,7 +148,7 @@ opacity: 0;
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #F1F1F1;
+    /* border: 1px solid #F1F1F1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   

@@ -1,14 +1,6 @@
 
 
-/* body{
-    font-family: 'Cairo', sans-serif;
-    font-family: 'Righteous', cursive;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width : 100%;
-    height:1000px;
-  
-} */
+
 header{
     display: block;
     background-color: rgba(0, 0, 0, 0.4);;
@@ -25,16 +17,13 @@ h1{
     margin-left: 91px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
 }
-
  ul{
-     float: right;
     margin-left: 336px;
-    /* margin-top: -42px; */
+    margin-top: -42px;
     margin-bottom: 20px;
-    /* margin-left: 999px;} */}
-li {
+    margin-left: 999px;}
+ul li {
     display: inline;
     padding: 23px;
     color:white;
@@ -61,14 +50,7 @@ a{
 	text-decoration: none;
 	transition: font-size 1s;
 }
-/* p {
-    margin-left: 70px;
-    margin-top: 90px;
-    font-size: 27px;
-    font-family: 'Work Sans', sans-serif;
-    color: white;
 
-} */
 
 .logo{
     float: left;
@@ -79,26 +61,130 @@ a{
 
 
 
-.logo {
-    float: left;
-    width: 93px;
-    margin-top: -10px;
-    margin-left: -2px;
+
+/* footer css */
+footer {
+    width : 100%;
+    position: absolute;
+    bottom: 0;
+
 }
-ul {
-    float: right;
-    margin-left: 336px;
+
+.lastSection{
+    position: relative ;
+    padding: 20px 0px ;
+    background-color: black;
+    height: 158px;
+    border-block-end: 1px solid white;
     margin-top: 30px;
-    margin-bottom: 20px;
+    color: white;
+    }
+
+.footLogo{
+    float: left;
+    width: 74px;
+    position: absolute;
+    left: 1px;
+    top: 28px;
+        }
+
+ .bottomlogo{
+    float: left;
+    width: 75px;
+    position: absolute;
+    left: 1px;
+    top: 23px;
+    font-size: 20px;
+
+        }
+h2{
+    
+    left: 19ps;
+    padding-left: 70px;
+    padding-top: 52px;
+    font-size: 20px;
 }
-h1 {
-    display: inline-block;
-    /* font-family: 'Cairo', sans-serif; */
-    font-family: 'Righteous', cursive;
-    /* font-family: 'Changa', sans-serif; */
-    font-size: 36px;
-    font-weight: bold;
-    margin-left: 34px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.aboutAs{
+position: absolute ;
+top : 20%;
+left: 22%;
+text-align: center ;
+font-size: 12px;
 }
+
+.contact{
+position: absolute ;
+top : 20%;
+left: 50%;
+text-align: center ;
+font-size: 12px;
+}
+
+.socialMedia{
+position: absolute ;
+top : 20%;
+left : 80%;
+text-align: center ;
+font-size: 12px;
+}
+
+h5 {
+    font-size: 20px;
+    padding-bottom: 18px;
+}
+
+.tail {
+    background-color: black;
+    width: 100%;
+  }
+  
+  .tail ol li {
+  display: inline ;
+  padding-left: 17%;
+  color: white;
+  background-color: black;
+  }
+  
+  ol li a{
+    color: white;
+  } 
+  .black{
+    background-color: black;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    width: 20px;
+    height: 15px;
+    font-size: 19px;
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+   
+    color: white;
+    padding: 6px;
+  }
+  
+  .fa-twitter {
+ 
+    color: white;
+    padding: 6px;
+  }
+  
+  .fa-google {
+   
+    color: white;
+    padding: 6px;
+  }
+  
