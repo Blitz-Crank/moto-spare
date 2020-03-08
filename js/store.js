@@ -5,7 +5,8 @@
 var saleForm = document.getElementById('saleForm');
 var itemsList = document.getElementById('items');
 var itemsInfo = document.getElementById('itemsInfo');
-
+var itemsDiv = document.getElementById('items-list');
+var counterIDs =0;
 
 
 // constructor function to create a basic drink
@@ -67,31 +68,47 @@ function renderOrders(){
   var img = document.createElement('img');
   img.setAttribute('src',StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
   itemsLI.appendChild(img);
+
+
+  var nameLi = document.createElement('p');
+  nameLi.textContent=`Item Name : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemName}`;
+  itemsLI.appendChild(nameLi);
+
+  var priseLi = document.createElement('p');
+  priseLi.textContent=`prise : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].prise}`;
+  itemsLI.appendChild(priseLi);
+
+  var contactLi = document.createElement('p');
+  contactLi.textContent=`contact with saler : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].phone}`;
+  itemsLI.appendChild(contactLi);
+
+
+  var addToCart = document.createElement('p');
+  var AddButton = document.createElement('button');
+  AddButton.setAttribute('id', `item${counterIDs}`);
+  AddButton.textContent='Add TO Cart';
+
+  itemsLI.appendChild(addToCart);
+  addToCart.appendChild(AddButton);
+
   itemsList.appendChild(itemsLI);
-
-  var infoOl = document.createElement('ol');
-
-  var nameLi = document.createElement('li');
-  nameLi.textContent=StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemName;
-  infoOl.appendChild(nameLi);
-
-  var priseLi = document.createElement('li');
-  priseLi.textContent=`prise = ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].prise}`;
-  infoOl.appendChild(priseLi);
-  
-
-  var addToCart = document.createElement('li');
-  var Addbutton = document.createElement('button');
-  Addbutton.textContent='Add TO Cart';
-
-  infoOl.appendChild(addToCart);
-  addToCart.appendChild(Addbutton);
-  itemsLI.appendChild(infoOl);
+  counterIDs ++ ;
+  itemsDiv.addEventListener('click',handleCart);
+}
 
 
+
+function handleCart(event){
+  event.preventDefault();
+
+  var choosen = event.target;
+
+  console.log(choosen);
 
 
 }
+
+
 
 
 // Add an event listener to the submit button
