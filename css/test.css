@@ -1,0 +1,221 @@
+body{
+    position: relative;
+    background-image: url("https://1-station.com/wp-content/uploads/2017/09/Image-1.jpg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1500px;
+}
+
+main {
+    height: 941px;
+}
+
+h3{
+    color: white;
+    font-family: cursive;
+    padding-left: 50px;
+    padding-top: 52px;
+    font-size: 35px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+
+/* neon part  */
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+.motto {
+   width: 431px;
+   height: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Codystar';
+}
+
+.neons {
+   margin-top: 10rem;
+   text-align: center;
+}
+
+.neons h3 {
+  font-size: 30px;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}
+
+/*  */
+
+/* form Area */
+.store-bg {
+    height: 700px;
+    position: relative;
+  }
+  .store-bg:after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9;
+    height: 700px;
+}
+
+ .buttonpluse {
+    background-color: cyan;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 100px 50px 3px 50px;
+    border-radius: 50%;
+    color: black;
+    clear: both;
+    padding: 4px 17px;
+    max-width: 350px;
+    z-index: 9999;
+    float: right;
+    transition: all 0.5s ease-in-out;
+    outline: none;
+    position: relative;
+    }
+.buttonpluse:hover{
+    background-color: rgb(160, 231, 231);
+    color: white;
+    cursor: pointer;
+
+}
+
+
+
+#saleForm{
+    clear: both;
+    padding: 20px 26px;
+    margin-right: 100px;
+    max-width: 350px;
+    z-index: 9999;
+    float: right;
+    position: relative;
+    background-color: #b2b2b266;
+    display: none; 
+    transform: rotate();
+    }
+
+#saleForm label {
+    color: #fff;
+    display: block;
+    margin: 20px 0 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: -1.6px;
+    }
+#saleForm input , #saleForm select {
+    padding: 8px 20px;
+    width: 300px;
+    }
+#saleForm select{
+    height: 36px;
+    width: 344px;
+    }
+
+.submitButton{
+    background-color: #cf1407;
+    padding: 10px 36px;
+    margin: 18px 80px;
+    float: right;
+    box-shadow: -1px -1px 8px #80423d;
+    color: #fff;
+    font-size: 18px;
+    font-family: sans-serif;
+    border: 1px solid #80423d;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    outline: none;
+    }
+/*  */
+
+
+/* item list area */
+li img {
+    height: 150px ;
+    width: 150px;
+    cursor: pointer;
+    padding-left: 22px;
+    }
+
+.items-list h3{
+    margin: 0 122px 42px 37px;
+    }
+.items-list {
+    color: #fff;
+    float: left;
+    position: relative;
+    margin: 100px auto 0;
+    display: block;
+    width: 800px;
+    z-index: 999;
+    background-color: #ffffff6b;
+    padding: 0px;
+    border-radius: 50px;
+    }
+     
+h3{
+   font-size: 40px;
+    }
+
+#items {
+    padding: 10px 0px;
+    list-style-type: circle;
+    text-align: left;
+    padding: 15px 53px;
+    margin-left: -46px;
+    width: 1000px;
+    }
+
+#items li {
+    padding: 10px 15px;
+    font-size: 17px;
+    color: black;
+    display: inline-block;
+    margin-top: 40px;
+    }
+ol li {
+    display: block;
+    padding: 0px;
+    }
+
+button:hover{
+    background-color: #c95353;
+    border: 1px solid #1b2b2a;
+    color: white;
+    }
+p { 
+    display: none;
+    }
+    
+ul li:hover p{
+    display: block ;
+    }
+  
+/*  */
