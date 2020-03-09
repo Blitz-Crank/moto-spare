@@ -66,6 +66,7 @@ h3{
 .store-bg {
     height: 700px;
     position: relative;
+    float: right; 
   }
   .store-bg:after {
     content: "";

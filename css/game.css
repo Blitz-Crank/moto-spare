@@ -1,0 +1,75 @@
+body{
+    background-color: #baa217;
+   
+    position: relative;
+}
+
+main{
+    height: 80%;
+    width: 100%;
+}
+
+section{
+    width: 1000px;
+    height: 300px;
+    margin: 100px auto;
+   
+}
+
+.firstSec{
+    background-color: tomato;
+    
+
+}
+
+.secondSec{
+    background-color: teal;
+
+}
+
+.thirdSec{
+    background-color: blue;
+
+}
+
+section div {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+}
+
+.weel{
+    margin: 50px 19px;
+}
+.mirror{
+    margin: -207px 384px;
+}
+.battary{
+    margin: 50px 754px; 
+}
+
+.motor{
+    margin: 50px 19px;
+
+}
+.break{
+    margin: -207px 384px;
+
+}
+.stearing{
+    margin: 50px 754px;
+
+}
+
+.handBreak{
+    margin: 50px 19px;
+
+}
+.key{
+    margin: -207px 384px;
+
+}
+.light{
+    margin: 50px 754px;
+
+}

@@ -3,7 +3,7 @@ body{
   background-image: url("https://1-station.com/wp-content/uploads/2017/09/Image-1.jpg" );
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1500px;
+  height: 2000px;
 }
 
 main {
@@ -31,6 +31,8 @@ h3{
  justify-content: center;
  align-items: center;
  font-family: 'Codystar';
+ float: left;
+ margin-top: 138px;
 }
 
 .neons {
@@ -51,17 +53,43 @@ animation: glow 2s ease-in-out infinite alternate;
 @-webkit-keyframes glow {
    from {
     color: #fff;
-  text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  text-shadow: 0 0 10px #d4ae43, 0 0 20px #d4ae43, 0 0 30px #d4ae43, 0 0 40px #d4ae43, 0 0 50px #d4ae43, 0 0 60px #d4ae43, 0 0 70px #d4ae43, 0 0 90px #d4ae43;
 }
 
 to {
    color: gray;
-  text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  text-shadow: 0 0 20px #d4ae43, 0 0 30px #d4ae43, 0 0 40px #d4ae43, 0 0 50px #d4ae43, 0 0 60px #d4ae43, 0 0 70px #d4ae43, 0 0 80px #d4ae43, 0 1 90px #d4ae43;
 }
 }
 
 /*  */
+/* slider area  */
+  .slider{
+    width: 890px;
+    height: 400px;
+    background-image: url(../img/2019-audi-a7_100678918_h.jpg);
+    background-size: cover;
+    animation: slider 20s infinite;
+    float: right;
+    margin-top: 40px;
+    margin-right: 144px;
+  }
 
+  @keyframes slider {
+    25%{
+      background-image: url(../img/4474-Showcar2.jpg);
+    }
+    50%{
+      background-image: url(../img/bg_2019_volvo_v60_cross_country_header.jpg);
+    }
+    75%{
+      background-image: url(../img/pexels-photo-1253050.jpeg);
+    }
+    100%{
+      background-image: url(../img/pexels-photo-919073.jpeg);
+    }
+  }
+/*  */
 /* form Area */
 .store-bg {
   height: 700px;
@@ -69,7 +97,7 @@ to {
   width: 500px;
   float: right;
 }
-/* .store-bg:after {
+.store-bg:after {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0.5;
@@ -80,10 +108,10 @@ to {
   position: fixed;
   z-index: 9;
   height: 700px;
-} */
+}
 
 .buttonpluse {
-  background-color: cyan;
+  background-color: #d4ae43;
   border: none;
   text-align: center;
   text-decoration: none;
@@ -173,14 +201,23 @@ li img {
   color: #fff;
   float: left;
   position: relative;
-  margin: 230px  auto 0;
+  margin: 250px auto 0;
   display: block;
   width: 800px;
   z-index: 999;
   background-color: #ffffff6b;
   padding: 0px;
   border-radius: 50px;
+  animation-name: itemsDiv;
+  animation-duration: 4s;
+  
   }
+/* 
+  @keyframes itemsDiv {
+    0%   { right:0px; top:250px;}
+    50%  { right:100px; top:250px;}
+    100% { left:0px; top:250px;}
+  } */
    
 h3{
  font-size: 40px;
@@ -201,6 +238,8 @@ h3{
   color: black;
   display: inline-block;
   margin-top: 40px;
+  height: 250px;
+  width: 260px;
   }
 ol li {
   display: block;
@@ -214,10 +253,15 @@ button:hover{
   }
 p { 
   display: none;
+  font-size: 1px;
+  transition: font-size 2s;
+  padding: 2px;
   }
   
 ul li:hover p{
-  display: block ;
+  display: block;
+  font-size: 15px;
+  text-align: justify;
   }
 
 /*  */

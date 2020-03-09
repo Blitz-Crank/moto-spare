@@ -1,12 +1,12 @@
 'use strict';
 
 
-
 var saleForm = document.getElementById('saleForm');
 var itemsList = document.getElementById('items');
 // var itemsDiv = document.getElementById('items-list');
-var counterIDs =0;
-
+var counterIDs =4;
+var itemsArray = [];
+var all = [];
 // constructor function to create a new Item
 function StoreItems(name, phone, itemName, prise , itemPhoto){
   this.name = name;
@@ -14,21 +14,227 @@ function StoreItems(name, phone, itemName, prise , itemPhoto){
   this.itemName = itemName;
   this.prise = prise;
   this.itemPhoto=itemPhoto;
-
   // add every new item to the array
-  StoreItems.itemsArray.push(this);
+  itemsArray.push(this);
   setItem();
 }
+function Allthing(){
+  all.push(this);
+}
+
+
+// local items
+function firstItems (){
+  //first item
+  var itemsLI0 = document.createElement('li');
+  itemsLI0.setAttribute('id','list0');
+  var img0 = document.createElement('img');
+  img0.setAttribute('src','../img/motor.jpg');
+  img0.setAttribute('alt','motor');
+  itemsLI0.appendChild(img0);
+
+  var nameLi0 = document.createElement('p');
+  nameLi0.textContent='Item Name : Motor';
+  itemsLI0.appendChild(nameLi0);
+
+  var priseLi0 = document.createElement('p');
+  priseLi0.textContent='prise : 10jd';
+  itemsLI0.appendChild(priseLi0);
+
+  var contactLi0 = document.createElement('p');
+  contactLi0.textContent='contact with saler : 07953277';
+  itemsLI0.appendChild(contactLi0);
+
+  var addToCart0 = document.createElement('p');
+  var AddButton0 = document.createElement('button');
+  AddButton0.setAttribute('id', 'item0');
+  AddButton0.textContent='Add TO Cart';
+  itemsLI0.appendChild(addToCart0);
+  addToCart0.appendChild(AddButton0);
+  itemsList.appendChild(itemsLI0);
+
+  /////
+  /// second item
+  var itemsLI1 = document.createElement('li');
+  itemsLI1.setAttribute('id','list1');
+  var img1 = document.createElement('img');
+  img1.setAttribute('src','../img/battery.jpg');
+  img1.setAttribute('alt','battery');
+  itemsLI1.appendChild(img1);
+
+  var nameLi1 = document.createElement('p');
+  nameLi1.textContent='Item Name : Battery';
+  itemsLI1.appendChild(nameLi1);
+
+  var priseLi1 = document.createElement('p');
+  priseLi1.textContent='prise : 20jd';
+  itemsLI1.appendChild(priseLi1);
+
+  var contactLi1 = document.createElement('p');
+  contactLi1.textContent='contact with saler : 07953277';
+  itemsLI1.appendChild(contactLi1);
+
+  var addToCart1 = document.createElement('p');
+  var AddButton1 = document.createElement('button');
+  AddButton1.setAttribute('id', 'item1');
+  AddButton1.textContent='Add TO Cart';
+  itemsLI1.appendChild(addToCart1);
+  addToCart1.appendChild(AddButton1);
+  itemsList.appendChild(itemsLI1);
+  /////
+  //// third item
+  var itemsLI2 = document.createElement('li');
+  itemsLI2.setAttribute('id','list2');
+  var img2 = document.createElement('img');
+  img2.setAttribute('src','../img/radio.jpg');
+  img2.setAttribute('alt','radio');
+  itemsLI2.appendChild(img2);
+
+  var nameLi2 = document.createElement('p');
+  nameLi2.textContent='Item Name : Radio';
+  itemsLI2.appendChild(nameLi2);
+
+  var priseLi2 = document.createElement('p');
+  priseLi2.textContent='prise : 15jd';
+  itemsLI2.appendChild(priseLi2);
+
+  var contactLi2 = document.createElement('p');
+  contactLi2.textContent='contact with saler : 07953277';
+  itemsLI2.appendChild(contactLi2);
+
+  var addToCart2 = document.createElement('p');
+  var AddButton2 = document.createElement('button');
+  AddButton2.setAttribute('id', 'item2');
+  AddButton2.textContent='Add TO Cart';
+  itemsLI2.appendChild(addToCart2);
+  addToCart2.appendChild(AddButton2);
+  itemsList.appendChild(itemsLI2);
+  //////
+  //// forth Item
+  var itemsLI3 = document.createElement('li');
+  itemsLI3.setAttribute('id','list3');
+  var img3 = document.createElement('img');
+  img3.setAttribute('src','../img/weels.png');
+  img3.setAttribute('alt','weels');
+  itemsLI3.appendChild(img3);
+
+  var nameLi3 = document.createElement('p');
+  nameLi3.textContent='Item Name : Weels';
+  itemsLI3.appendChild(nameLi3);
+
+  var priseLi3 = document.createElement('p');
+  priseLi3.textContent='prise : 30jd';
+  itemsLI3.appendChild(priseLi3);
+
+  var contactLi3 = document.createElement('p');
+  contactLi3.textContent='contact with saler : 07953277';
+  itemsLI3.appendChild(contactLi3);
+  
+  var addToCart3 = document.createElement('p');
+  var AddButton3 = document.createElement('button');
+  AddButton3.setAttribute('id', 'item3');
+  AddButton3.textContent='Add TO Cart';
+  itemsLI3.appendChild(addToCart3);
+  addToCart3.appendChild(AddButton3);
+
+  itemsList.appendChild(itemsLI3);
+/////
+  // var itemsLI4 = document.createElement('li');
+  // itemsLI4.setAttribute('id','list4');
+  // var img4 = document.createElement('img');
+  // img4.setAttribute('src','../img/bilte.png');
+  // img4.setAttribute('alt','bilte');
+  // itemsLI4.appendChild(img4);
+  // itemsList.appendChild(itemsLI4);
+  // var itemsLI5 = document.createElement('li');
+  // itemsLI5.setAttribute('id','list5');
+  // var img5 = document.createElement('img');
+  // img5.setAttribute('src','../img/assemblies.png');
+  // img5.setAttribute('alt','assemblies');
+  // itemsLI5.appendChild(img5);
+  // itemsList.appendChild(itemsLI5);
+  // var itemsLI6 = document.createElement('li');
+  // itemsLI6.setAttribute('id','list6');
+  // var img6 = document.createElement('img');
+  // img6.setAttribute('src','../img/ShockAbsorber.jpg');
+  // img6.setAttribute('alt','Absorber');
+  // itemsLI6.appendChild(img6);
+  // itemsList.appendChild(itemsLI6);
+}
+firstItems();
+
+
+
+
+
+
+
 
 // set the global array to empty
-StoreItems.itemsArray = [];
+StoreItems.prototype.renderNewItem = function(){
 
+  var itemsLI = document.createElement('li');
+  itemsLI.setAttribute('id',`list${counterIDs}`);
+  var img = document.createElement('img');
+  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
+  img.setAttribute('src',itemsArray[itemsArray.length-1].itemPhoto);
+  itemsLI.appendChild(img);
+
+
+  var nameLi = document.createElement('p');
+  nameLi.textContent=`Item Name : ${itemsArray[itemsArray.length-1].itemName}`;
+  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].name);
+  itemsLI.appendChild(nameLi);
+
+
+  var priseLi = document.createElement('p');
+  priseLi.textContent=`prise : ${itemsArray[itemsArray.length-1].prise}`;
+  itemsLI.appendChild(priseLi);
+
+  var contactLi = document.createElement('p');
+  contactLi.textContent=`contact with saler : ${itemsArray[itemsArray.length-1].phone}`;
+  itemsLI.appendChild(contactLi);
+
+  var addToCart = document.createElement('p');
+  var AddButton = document.createElement('button');
+  AddButton.setAttribute('id', `item${counterIDs}`);
+  AddButton.textContent='Add TO Cart';
+  itemsLI.appendChild(addToCart);
+  addToCart.appendChild(AddButton);
+  itemsList.appendChild(itemsLI);
+  counterIDs ++ ;
+};
+Allthing.prototype.renderNewItem = function(){
+
+  var itemsLI = document.createElement('li');
+  var img = document.createElement('img');
+  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
+  img.setAttribute('src',itemsArray[itemsArray.length-1].itemPhoto);
+  itemsLI.appendChild(img);
+  var nameLi = document.createElement('p');
+  nameLi.textContent=`Item Name : ${itemsArray[itemsArray.length-1].itemName}`;
+  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].name);
+  itemsLI.appendChild(nameLi);
+  var priseLi = document.createElement('p');
+  priseLi.textContent=`prise : ${itemsArray[itemsArray.length-1].prise}`;
+  console.log(itemsArray[0]);
+  itemsLI.appendChild(priseLi);
+  var contactLi = document.createElement('p');
+  contactLi.textContent=`contact with saler : ${itemsArray[itemsArray.length-1].phone}`;
+  itemsLI.appendChild(contactLi);
+  var addToCart = document.createElement('p');
+  var AddButton = document.createElement('button');
+  AddButton.setAttribute('id', `item${counterIDs}`);
+  AddButton.textContent='Add TO Cart';
+  itemsLI.appendChild(addToCart);
+  addToCart.appendChild(AddButton);
+  itemsList.appendChild(itemsLI);
+  counterIDs ++ ;
+};
 // this fun will take all the value from the form on submit
 function handleSubmit(event){
   event.preventDefault();
-
   var formId = document.getElementById('saleForm');
-
   // get all the values from the form
   var part = event.target;
   var name = part.name.value;
@@ -39,104 +245,57 @@ function handleSubmit(event){
   console.log(Photo.split('\\'));
   var itemPhoto =`../img/${Photo.split('\\')[2]}`;
   console.log(itemPhoto);
-  new StoreItems(name, phone, itemName, prise,itemPhoto);
+  var hi =new StoreItems(name, phone, itemName, prise,itemPhoto);
   //console.log(StoreItems.itemsArray);
-  renderNewItem();
+  hi.renderNewItem();
   formId.reset();
-
 }
-
-
-
-///////////test for the image
-
-// var openFile = function(itemPhoto) {
-//   var input = itemPhoto.target;
-
-//   var reader = new FileReader();
-//   reader.onload = function(){
-//     var dataURL = reader.result;
-//     var output = document.getElementById('img');
-//     output.src = dataURL;
-//   };
-//   reader.readAsDataURL(input.files[0]);
-// };
-
-//////////////////////
-
+function selectItem(event){
+  event.preventDefault();
+  var theTarget = event.target;
+  for(var i = 0;i<all.length;i++){
+    if (theTarget.id ===`item${i}`){
+      var selectedEl = document.getElementById(`list${i}`);
+      $(document).ready(function(){
+        $(`#list${i}`).remove();
+      });
+      selectedEl.remove();
+    }
+  }
+}
 
 
 function setItem(){
-  var newItem = JSON.stringify(StoreItems.itemsArray);
+  var newItem = JSON.stringify(itemsArray);
   //console.log(newItem);
   localStorage.setItem( 'newItem', newItem);
-
 }
-
-
 function getItem(){
-
   var storedItem = localStorage.getItem('newItem');
-  if(storedItem){
-    StoreItems.itemsArray = JSON.parse(storedItem);
+  if(localStorage.newItem){
+    itemsArray = JSON.parse(storedItem);
+    for(var i= 0 ;i<itemsArray.length;i++){
+      new Allthing(itemsArray[i]).renderNewItem();
+
+    }
+
+
   }
-
 }
 
-function renderNewItem(){
-
-  getItem();
-
-  var itemsLI = document.createElement('li');
-  var img = document.createElement('img');
-  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
-  img.setAttribute('src',StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
-  itemsLI.appendChild(img);
-
-
-  var nameLi = document.createElement('p');
-  nameLi.textContent=`Item Name : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemName}`;
-  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].name);
-  itemsLI.appendChild(nameLi);
-
-  var priseLi = document.createElement('p');
-  priseLi.textContent=`prise : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].prise}`;
-  itemsLI.appendChild(priseLi);
-
-  var contactLi = document.createElement('p');
-  contactLi.textContent=`contact with saler : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].phone}`;
-  itemsLI.appendChild(contactLi);
-
-
-  var addToCart = document.createElement('p');
-  var AddButton = document.createElement('button');
-  AddButton.setAttribute('id', `item${counterIDs}`);
-  AddButton.textContent='Add TO Cart';
-
-  itemsLI.appendChild(addToCart);
-  addToCart.appendChild(AddButton);
-
-  itemsList.appendChild(itemsLI);
-  counterIDs ++ ;
-
-}
-
+//calling events
 // Add an event listener to the submit button
 saleForm.addEventListener('submit', handleSubmit);
+// for cart
+itemsList.addEventListener('onclick',selectItem);
+getItem();
 
 
 
 
 
-// function handleCart(event){
-//   event.preventDefault();
-
-//   var choosen = event.target;
-
-//   console.log(choosen);
 
 
-// }
 
 
 

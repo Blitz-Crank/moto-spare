@@ -156,7 +156,7 @@ h5 {
   .black{
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 0px;
-    padding-bottom: 11px;  }
+    padding-bottom: 0px;  }
 
   .fa {
     padding: 20px;
@@ -213,8 +213,11 @@ a  {
 
 }
 ol{
-  padding-top: 18px;
+  padding-top: 0px;
 }
 .hover-foot a:hover{
   font-size: 20px;}
   
+
+
+
