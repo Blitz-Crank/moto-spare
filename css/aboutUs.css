@@ -1,8 +1,18 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 1010px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+}
 div#cont {
     position: relative;
     margin: auto;
-    width: 800px;
+    width: 700px;
     height: 700px;
+    margin-top: 53px;
+    margin-right: 795px;
 }
 .main {
     /* animation-play-state: running; */
@@ -19,7 +29,6 @@ div#cont {
     position: absolute;
     top: 0%;
     left: 40%;
-    /* display: none; */
     animation-name: tl;
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
@@ -146,7 +155,7 @@ opacity: 0;
 }
 .flip-box {
     background-color: transparent;
-    width: 300px;
+    width: 200px;
     height: 200px;
     /* border: 1px solid #F1F1F1; */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -184,7 +193,41 @@ opacity: 0;
   
   /* Style the back side */
   .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #e6ffe6;
+    color: black;
     transform: rotateY(180deg);
   }
+ 
+  div#Raghad {
+    margin-top: -171px;
+    margin-left: 332px;
+
+}
+div#Yousef {
+    margin-left: 277px;
+    margin-top: 95px;
+}
+div#Omar {
+    margin-left: 332px;
+    margin-bottom: 108px;
+}
+div#israa{
+    margin-left: 277px;
+    margin-top: 33px;}
+
+p{
+    margin-top: 10px;
+    font-family: 'Righteous', cursive;
+
+}
+h3{
+    padding: 5px;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Righteous', cursive;
+
+}
+h2{
+    font-family: 'Righteous', cursive;
+}
