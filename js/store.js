@@ -1,15 +1,13 @@
 'use strict';
 
-// target our order form from the html
+
 
 var saleForm = document.getElementById('saleForm');
 var itemsList = document.getElementById('items');
-var itemsInfo = document.getElementById('itemsInfo');
-var itemsDiv = document.getElementById('items-list');
+// var itemsDiv = document.getElementById('items-list');
 var counterIDs =0;
 
-
-// constructor function to create a basic drink
+// constructor function to create a new Item
 function StoreItems(name, phone, itemName, prise , itemPhoto){
   this.name = name;
   this.phone = phone;
@@ -17,7 +15,7 @@ function StoreItems(name, phone, itemName, prise , itemPhoto){
   this.prise = prise;
   this.itemPhoto=itemPhoto;
 
-  // add every drink that gets created into an array
+  // add every new item to the array
   StoreItems.itemsArray.push(this);
   setItem();
 }
@@ -25,8 +23,7 @@ function StoreItems(name, phone, itemName, prise , itemPhoto){
 // set the global array to empty
 StoreItems.itemsArray = [];
 
-
-// event handler function to run everytime the form is submitted
+// this fun will take all the value from the form on submit
 function handleSubmit(event){
   event.preventDefault();
 
@@ -38,40 +35,68 @@ function handleSubmit(event){
   var phone = part.phone.value;
   var itemName = part.itemName.value;
   var prise  = part.prise.value;
-  var itemPhoto = part.itemPhoto.value;
-
+  var Photo = part.itemPhoto.value;
+  console.log(Photo.split('\\'));
+  var itemPhoto =`../img/${Photo.split('\\')[2]}`;
+  console.log(itemPhoto);
   new StoreItems(name, phone, itemName, prise,itemPhoto);
-  console.log(StoreItems.itemsArray);
-  // update the previous orders with the new order
-  renderOrders();
+  //console.log(StoreItems.itemsArray);
+  renderNewItem();
   formId.reset();
 
 }
 
-//update drinks
+
+
+///////////test for the image
+
+// var openFile = function(itemPhoto) {
+//   var input = itemPhoto.target;
+
+//   var reader = new FileReader();
+//   reader.onload = function(){
+//     var dataURL = reader.result;
+//     var output = document.getElementById('img');
+//     output.src = dataURL;
+//   };
+//   reader.readAsDataURL(input.files[0]);
+// };
+
+//////////////////////
+
+
+
 function setItem(){
   var newItem = JSON.stringify(StoreItems.itemsArray);
-  console.log(newItem);
+  //console.log(newItem);
   localStorage.setItem( 'newItem', newItem);
+
 }
 
-//get all drinks
+
 function getItem(){
-  if(newItem){
-    var newItem = localStorage.getItem('newItem');
-    StoreItems.itemsArray = JSON.parse(newItem);
+
+  var storedItem = localStorage.getItem('newItem');
+  if(storedItem){
+    StoreItems.itemsArray = JSON.parse(storedItem);
   }
+
 }
-function renderOrders(){
+
+function renderNewItem(){
+
+  getItem();
 
   var itemsLI = document.createElement('li');
   var img = document.createElement('img');
+  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
   img.setAttribute('src',StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
   itemsLI.appendChild(img);
 
 
   var nameLi = document.createElement('p');
   nameLi.textContent=`Item Name : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemName}`;
+  // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].name);
   itemsLI.appendChild(nameLi);
 
   var priseLi = document.createElement('p');
@@ -93,25 +118,27 @@ function renderOrders(){
 
   itemsList.appendChild(itemsLI);
   counterIDs ++ ;
-  itemsDiv.addEventListener('click',handleCart);
-}
-
-
-
-function handleCart(event){
-  event.preventDefault();
-
-  var choosen = event.target;
-
-  console.log(choosen);
-
 
 }
-
-
-
 
 // Add an event listener to the submit button
 saleForm.addEventListener('submit', handleSubmit);
-getItem();
+
+
+
+
+
+// function handleCart(event){
+//   event.preventDefault();
+
+//   var choosen = event.target;
+
+//   console.log(choosen);
+
+
+// }
+
+
+
+
 
