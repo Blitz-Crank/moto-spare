@@ -66,8 +66,10 @@ to {
 .store-bg {
   height: 700px;
   position: relative;
+  width: 500px;
+  float: right;
 }
-.store-bg:after {
+/* .store-bg:after {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0.5;
@@ -78,7 +80,7 @@ to {
   position: fixed;
   z-index: 9;
   height: 700px;
-}
+} */
 
 .buttonpluse {
   background-color: cyan;
@@ -171,7 +173,7 @@ li img {
   color: #fff;
   float: left;
   position: relative;
-  margin: -400px auto 0;
+  margin: 230px  auto 0;
   display: block;
   width: 800px;
   z-index: 999;
