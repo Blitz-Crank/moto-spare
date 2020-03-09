@@ -1,12 +1,13 @@
 
 
-
 header{
     display: block;
     background-color: rgba(0, 0, 0, 0.4);;
     color: white;
     padding: 8px;
     position: sticky;
+    font-family: 'Righteous', cursive;
+
 }
 h1{
     /* font-family: 'Cairo', sans-serif; */
@@ -67,13 +68,16 @@ footer {
     width : 100%;
     position: absolute;
     bottom: 0;
+    /* font-family: 'Righteous', cursive; */
+    font-family: 'Signika', sans-serif;
+
 
 }
 
 .lastSection{
     position: relative ;
     padding: 20px 0px ;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     height: 158px;
     border-block-end: 1px solid white;
     margin-top: 30px;
@@ -103,6 +107,8 @@ h2{
     padding-left: 70px;
     padding-top: 52px;
     font-size: 20px;
+    font-family: 'Righteous', cursive;
+
 }
 .aboutAs{
 position: absolute ;
@@ -122,7 +128,7 @@ font-size: 12px;
 
 .socialMedia{
 position: absolute ;
-top : 20%;
+top: 20%;
 left : 80%;
 text-align: center ;
 font-size: 12px;
@@ -130,11 +136,10 @@ font-size: 12px;
 
 h5 {
     font-size: 20px;
-    padding-bottom: 18px;
-}
+    padding-bottom: 15px;}
 
 .tail {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
   }
   
@@ -142,15 +147,16 @@ h5 {
   display: inline ;
   padding-left: 17%;
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   }
   
   ol li a{
     color: white;
   } 
   .black{
-    background-color: black;
-  }
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+    padding-bottom: 11px;  }
 
   .fa {
     padding: 20px;
@@ -174,17 +180,41 @@ h5 {
    
     color: white;
     padding: 6px;
+    transition: font-size 1s;
+
   }
   
   .fa-twitter {
  
     color: white;
     padding: 6px;
+    transition: font-size 1s;
+
   }
   
   .fa-google {
    
     color: white;
     padding: 6px;
+    transition: font-size 1s;
+
   }
+  
+ol li {
+  padding: 6px;
+}
+li{
+  display: inline;
+
+
+}
+a  {
+  transition: font-size 1s;
+
+}
+ol{
+  padding-top: 18px;
+}
+.hover-foot a:hover{
+  font-size: 20px;}
   
