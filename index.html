@@ -1,88 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Changa|Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Simonetta:400,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/headFoot.css">
-
-    <title>moto-spare</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Connected Car Assistant">
+  <meta name="author" content="Surface">
+  <link href="https://fonts.googleapis.com/css?family=Changa|Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Simonetta:400,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/loader.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/home.css">
+  <title>moto-spare</title>
 </head>
-
-<body style="background-image:url(img/1920x1080_A1814532_large.webp">
-    <!-- style = "background-image:url(img/Photo-2019-09-04-08-44-30.jpg)" -->
-    <header>
-        <h1>MotoSpare</h1>
-        <img class="logo" src="img/logo_new.png" alt="logo">
-        <ul class="hover-a">
-            <li><a href="">Home</a></li>
-            <li><a href="">Store</a></li>
-            <li><a href="">Sale</a></li>
-            <li><a href="">About Us</a></li>
-        </ul>
-
-    </header>
-
-    <main>
-        <div class="best-container">
-            <div class="weGive">
-                <span class="we">we</span><span class="give">give</span><span class="you">you</span>
-            </div>
-            <div class="ks">The best service</div>
+<body>
+  <div class="loader-div">
+  <figure class="loader">
+    <div class="car">
+      <span class="body"></span>
+      <span class="wheels"></span>
+    </div>
+    <div class="strikes">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </figure>
+</div>
+  <header>
+    <div class="style-header">
+      <h1>MotoSpare</h1>
+      <img class="logo" src="img/logo_new.png" alt="logo">
+      <ul class="hover-a">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/store.html">Store</a></li>
+        <li><a href="pages/cart.html">My Favourite</a></li>
+        <li><a href="pages/aboutUs.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="best-container">
+      <div class="weGive">
+        <span class="we">we</span><span class="give">give</span><span class="you">you</span>
+      </div>
+      <div class="ks">The best service</div>
+    </div>
+    <div class="car-background"
+      style="background-image: url(img/1920x1080_A1814532_large.webp); background-repeat: no-repeat;background-size: cover;">
+    </div>
+  </header>
+  <main>
+    <div class="container d-flex justify-content-center ">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-left mt-5" data-aos="fade-up">
+          <img src="img/101.jpg" class="img-fluid p-relative-img ">
         </div>
-    </main>
-
-    <footer>
-        <section class="lastSection text">
-            <div class="footLogo">
-
-                <img class='bottomlogo' src="../img/logo_new.png" alt="logo" />
-                <h2>
-                    MotoSpare
-                </h2>
-            </div>
-            <div class="aboutAs hover-foot">
-                <ol>
-                    <h5>Meet the developers </h5>
-                    <li><a href="">Israa Othman</a></li>
-                    <li><a href="">Omar Alawi</a></li>
-                    <li><a href="">Raghad Alquran</a></li>
-                    <li><a href="">Yousef Alshun</a></li>
-                </ol>
-
-            </div>
-            <div class="contact hover-foot">
-                <ol>
-                    <h5> Contact Us</h5>
-                    <li>Phone Number :+962 785311513</li>
-                    <li>Email : blitzCrank@gmail.com </li>
-
-                </ol>
-            </div>
-            <div class="socialMedia hover-foot">
-                <ol>
-                    <h5>Follow Us </h5>
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-google"></a></li>
-                </ol>
-            </div>
-
-        </section>
-
-    </footer>
-    <script src="js/app.js"></script>
-    <script src="js\Home.js"></script>
+        <div class="col-lg-6 col-md-6 text-heading my-auto"data-aos="fade-in">
+          <h2 class="p-relative">MotoSpare's business
+          </h2>
+          <p class="grey-color wow fadeInUp p-relative">MotoSpare is in the business of providing
+            genuine auto parts for all car makes and models.
+            Our complete focus is to provide our customers with genuine parts at the most competitive
+            prices one can find, and once you see our prices you would be pleased.
+            Providing the best customer service is in the team’s DNA and we take pride in doing this.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container h-100 d-flex justify-content-center flex-column">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-heading my-auto" data-aos="fade-in">
+          <h2>Parts and Accessories </h2>
+          <p>Our extensive range of parts and accessories combined with our user-friendly website ensures that our
+            customers
+            find any part they are looking for in no time, and if for any reason you are not able to then our
+            experienced
+            customer service team is there to help you at all times. </p>
+        </div>
+        <div class="col-lg-6 col-md-6 text-left" data-aos="fade-up">
+          <img src="img/102.jpg" class="img-fluid p-relative-img" >
+        </div>
+      </div>
+    </div>
+    <div class="container col-lg-12 h-100 d-flex justify-content-center flex-column features-section">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 text-left" data-aos="fade-up">
+          <img src="img/103.jpg" class="img-fluid p-relative-img">
+        </div>
+        <div class="col-lg-8 col-md-8 text-heading my-auto px-lg-5" data-aos="fade-in">
+          <h2>Features to make you love us more</h2>
+          <p>At MotoSpare, we serve both the end consumer and bulk orders for our B2B customers.
+            We ship globally and you can expect fast and efficient delivery with us.
+            Our team looks forward to helping you with your queries and serving your all genuine auto parts needs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 pb-5">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 my-auto" data-aos="fade-in">
+          <h2>Available for your
+            smartphone</h2>
+          <p class="font-normal">Simple and Affordable Online
+            <br />
+            Auto Parts Shopping.</p>
+          <img src="img/104.jpg" class="img-fluid app-store-img col-lg-8 px-0" data-aos="fade-up">
+        </div>
+        <div class="col-lg-6 col-md-6" data-aos="fade-up">
+          <img src="img/105.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="cars-logo">
+      <img src="img/Volkswagen-logo.png" width="85px">
+      <img src="img/kisspng-bentley-logo-ac-cars-symbol-bentley-5ac6ba47041416.9476746315229732550167.jpg" width="95px">
+      <img src="img/dwglogo.com-BMW-logo.webp" width="95px">
+      <img src="img/audi-logo-png-clip-art.png" width="85px">
+      <img src="img/2ndsubIMPA6-1333672776785-articleLarge.jpg" width="95px">
+      <img src="img/images.jpg" width="120px">
+      <img src="img/car_logo_PNG1658.png" width="75px">
+      <img src="img/Car-Logo.jpg" width="120px">
+      <img src="img/87-875262_kia-motors-logo-png-image-kia-car-logo.png" width="95px">
+      <img src="img/purepng.com-mazda-car-logologocar-brand-logoscarsmazda-car-logo-1701527428428lf8zo.png"
+        width="75px">
+      <img src="img/download.png" width="95px">
+      <img src="img/51e36dceeae2f8abaa673c5c6d37e01e.png" width="85px">
+    </div>
+  </main>
+  <footer>
+    <section class="lastSection text">
+      <div class="footLogo">
+        <img class='bottomlogo' src="../img/logo_new.png" alt="logo" />
+        <h2>
+          MotoSpare
+        </h2>
+      </div>
+      <div class="aboutAs hover-foot">
+        <ol>
+          <h5>Meet the developers </h5>
+          <li><a href="">Israa Othman</a></li>
+          <li><a href="">Omar Alawi</a></li>
+          <li><a href="">Raghad Alquran</a></li>
+          <li><a href="">Yousef Alshun</a></li>
+        </ol>
+      </div>
+      <div class="contact hover-foot">
+        <ol>
+          <h5> Contact Us</h5>
+          <li>Phone Number :+962 785311513</li>
+          <li>Email : blitzCrank@gmail.com </li>
+        </ol>
+      </div>
+      <div class="socialMedia hover-foot">
+        <ol>
+          <h5>Follow Us </h5>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-google"></a></li>
+        </ol>
+      </div>
+    </section>
+    <span  class="blackBackground  text tail">
+      <ol class="black">
+          <li>© 2020 Moto Spare, Inc.</li>
+          <li>Privacy Policy</li>
+          <li>Alpha version </li>
+      </ol>
+      </span> 
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/home.js"></script>
 </body>
-
 </html>

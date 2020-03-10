@@ -59,7 +59,7 @@ to {
   float: right;
   margin-top: 88px;
 }
-.store-bg:after {
+/* .store-bg:after {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0.5;
@@ -70,7 +70,7 @@ to {
   position: fixed;
   z-index: 9;
   height: 700px;
-}
+} */
 .buttonpluse {
   background-color:#a20606;
   border: none;
