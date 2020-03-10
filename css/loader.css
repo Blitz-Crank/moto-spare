@@ -1,21 +1,27 @@
-body {
+.loader-div {
   margin: 0;
   height: 100vh;
   display: flex;
+  position: fixed;
+  z-index: 999999999;
+  width: 100%;
   align-items: center;
   justify-content: center;
   background-color: #333;
+  animation: remove-loader 8s forwards;
 }
 
-.loader {
+.loader-div .loader {
   width: 11.7em;
   height: 4.2em;
   font-size: 16px;
-  color: lightcyan;
+  color: #E8AD46;
   position: relative;
+  z-index: 1001;
+  
 }
 
-.car {
+.loader-div .car {
   position: absolute;
   width: inherit;
   height: 2em;
@@ -47,10 +53,33 @@ body {
 
   100% {
       transform: translate(0.2em, 0.1em) rotate(-1deg);
+      
+  }
+}
+ @keyframes  fade-in{
+  0%{
+      opacity: 0;
+  }
+  30%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
   }
 }
 
-.car::before {
+@keyframes remove-loader{
+  0%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      display: none;
+      z-index: 0;
+  }
+}
+
+.loader-div .car::before {
   content: '';
   position: absolute;
   width: 0;

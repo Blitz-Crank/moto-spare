@@ -1,117 +1,147 @@
 'use strict';
-
-// target our order form from the html
-
 var saleForm = document.getElementById('saleForm');
 var itemsList = document.getElementById('items');
-var itemsInfo = document.getElementById('itemsInfo');
-var itemsDiv = document.getElementById('items-list');
-var counterIDs =0;
-
-
-// constructor function to create a basic drink
-function StoreItems(name, phone, itemName, prise , itemPhoto){
+// firstItems();
+// var itemsDiv = document.getElementById('items-list');
+// var counterIDs = 0;
+var itemsArray = [];
+// var all = [];
+// constructor function to create a new Item
+function StoreItems(name, phone, itemName, prise, itemPhoto) {
   this.name = name;
   this.phone = phone;
   this.itemName = itemName;
   this.prise = prise;
-  this.itemPhoto=itemPhoto;
-
-  // add every drink that gets created into an array
-  StoreItems.itemsArray.push(this);
-  setItem();
+  this.itemPhoto = itemPhoto;
+  // add every new item to the array
+  itemsArray.push(this);
+  // setItem();
 }
-
+// function Allthing(h) {
+//   all.push(this);
+// }
 // set the global array to empty
-StoreItems.itemsArray = [];
-
-
-// event handler function to run everytime the form is submitted
-function handleSubmit(event){
+function renderNewItem() {
+  itemsList.innerHTML = "";
+  for(var i = 0 ; i< itemsArray.length ; i++){
+    var itemsLI = document.createElement('li');
+    var img = document.createElement('img');
+    // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
+    img.setAttribute('src', itemsArray[i].itemPhoto);
+    itemsLI.appendChild(img);
+  
+  
+    var nameLi = document.createElement('p');
+    nameLi.classList.add('item-name');
+    nameLi.textContent = `Item Name : ${itemsArray[i].itemName}`;
+    // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].name);
+    itemsLI.appendChild(nameLi);
+  
+    var priseLi = document.createElement('p');
+    priseLi.classList.add('price');
+    priseLi.textContent = `prise : ${itemsArray[i].prise}`;
+    console.log(itemsArray[0]);
+    itemsLI.appendChild(priseLi);
+  
+    var contactDiv = document.createElement('div');
+    contactDiv.classList.add('contact-info');
+    var buttonEl = document.createElement('button');
+    buttonEl.textContent = 'Add to favourite';
+    contactDiv.appendChild(buttonEl);
+    var aTel = document.createElement('a');
+    aTel.setAttribute('href', `tel:${itemsArray[i].phone}`);
+    aTel.textContent = 'Click to Call!';
+    contactDiv.appendChild(aTel);
+     itemsLI.appendChild(contactDiv);
+  
+  
+    var addToCart = document.createElement('p');
+    buttonEl.setAttribute('id', `item${i}`);
+    buttonEl.setAttribute('class', `list`);
+    // AddButton.textContent = 'contact  Cart';
+  
+    itemsLI.appendChild(addToCart);
+  
+    itemsList.appendChild(itemsLI);
+  }
+}
+var pickedArr = [];
+// set item for all
+function setItem() {
+  var newItem = JSON.stringify(itemsArray);
+  //console.log(newItem);
+  localStorage.setItem('newItem', newItem);
+}
+function setItemCart() {
+  var cartItem = JSON.stringify(pickedArr);
+  //console.log(newItem);
+  localStorage.setItem('picked', cartItem);
+}
+//get item for all
+function getItem() {
+  var storedItem = localStorage.getItem('newItem');
+  // itemsArray = storedItem;
+  if (localStorage.newItem) {
+    itemsArray = JSON.parse(storedItem);
+    renderNewItem();
+  }
+}
+saleForm.addEventListener('submit', handleSubmit);
+getItem();
+// this fun will take all the value from the form on submit
+function handleSubmit(event) {
   event.preventDefault();
-
   var formId = document.getElementById('saleForm');
-
   // get all the values from the form
   var part = event.target;
   var name = part.name.value;
   var phone = part.phone.value;
   var itemName = part.itemName.value;
-  var prise  = part.prise.value;
-  var itemPhoto = part.itemPhoto.value;
-
-  new StoreItems(name, phone, itemName, prise,itemPhoto);
-  console.log(StoreItems.itemsArray);
-  // update the previous orders with the new order
-  renderOrders();
+  var prise = part.prise.value;
+  var Photo = part.itemPhoto.value;
+  // console.log(Photo.split('\\'));
+  var itemPhoto = `/img/${Photo.split('\\')[2]}`;
+  // console.log(itemPhoto);
+  new StoreItems(name, phone, itemName, prise, itemPhoto);
+  //console.log(StoreItems.itemsArray);
+   renderNewItem();  
   formId.reset();
-
+  formId.style.display = 'none';
+  setItem();
 }
-
-//update drinks
-function setItem(){
-  var newItem = JSON.stringify(StoreItems.itemsArray);
-  console.log(newItem);
-  localStorage.setItem( 'newItem', newItem);
-}
-
-//get all drinks
-function getItem(){
-  if(newItem){
-    var newItem = localStorage.getItem('newItem');
-    StoreItems.itemsArray = JSON.parse(newItem);
-  }
-}
-function renderOrders(){
-
-  var itemsLI = document.createElement('li');
-  var img = document.createElement('img');
-  img.setAttribute('src',StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
-  itemsLI.appendChild(img);
-
-
-  var nameLi = document.createElement('p');
-  nameLi.textContent=`Item Name : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemName}`;
-  itemsLI.appendChild(nameLi);
-
-  var priseLi = document.createElement('p');
-  priseLi.textContent=`prise : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].prise}`;
-  itemsLI.appendChild(priseLi);
-
-  var contactLi = document.createElement('p');
-  contactLi.textContent=`contact with saler : ${StoreItems.itemsArray[StoreItems.itemsArray.length-1].phone}`;
-  itemsLI.appendChild(contactLi);
-
-
-  var addToCart = document.createElement('p');
-  var AddButton = document.createElement('button');
-  AddButton.setAttribute('id', `item${counterIDs}`);
-  AddButton.textContent='Add TO Cart';
-
-  itemsLI.appendChild(addToCart);
-  addToCart.appendChild(AddButton);
-
-  itemsList.appendChild(itemsLI);
-  counterIDs ++ ;
-  itemsDiv.addEventListener('click',handleCart);
-}
-
-
-
-function handleCart(event){
-  event.preventDefault();
-
-  var choosen = event.target;
-
-  console.log(choosen);
-
-
-}
-
-
-
-
+//calling events
 // Add an event listener to the submit button
-saleForm.addEventListener('submit', handleSubmit);
-getItem();
+// for cart
+var listSelector = document.querySelectorAll('.list');
+console.log(listSelector);
+for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
+  console.log(listSelector[eventCount]);
+  // console.log(listSelector.length);
+  listSelector[eventCount].addEventListener('click', function (event) {
+    event.preventDefault();
+    // console.log(event.target.id);
+    var theTarget = event.target;
+    // console.log(itemsArray[Number(theTarget.id.substring(4))]);
+    // console.log((theTarget.id.substring(4)));
+    if (theTarget.id ===`item${Number(theTarget.id.substring(4))}`){
+    var selectedEl = document.getElementById(`list${Number(theTarget.id.substring(4))}`);
+    pickedArr.push(itemsArray[Number(theTarget.id.substring(4))]);
+    setItemCart();
+    // console.log(pickedArr);
+    }
+  });
+  // console.log(pickedArr);
+}
+// console.log(listSelector.length);
+
+
+var hotbod = document.querySelector("body");
+function doStuff() {
+    hotbod.className += " animate";
+}
+window.onload = function() {
+    doStuff();
+};
+
+
 

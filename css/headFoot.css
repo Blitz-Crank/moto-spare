@@ -1,5 +1,4 @@
-
-
+/* header CSS */
 header{
     display: block;
     background-color: rgba(0, 0, 0, 0.4);;
@@ -10,9 +9,7 @@ header{
 
 }
 h1{
-    /* font-family: 'Cairo', sans-serif; */
     font-family: 'Righteous', cursive;
-    /* font-family: 'Changa', sans-serif; */
     font-size:36px;
     font-weight: bold;
     margin-left: 91px;
@@ -30,7 +27,6 @@ ul li {
     color:white;
 }
 
-
 .hover-a a:hover{
 font-size: 20px;
 
@@ -39,7 +35,6 @@ font-size: 20px;
     position: fixed; 
     top: 0; 
     left: 0; 
-      
 		/* Preserve aspet ratio */
 		min-width: 100%;
 		min-height: 100%;
@@ -51,8 +46,6 @@ a{
 	text-decoration: none;
 	transition: font-size 1s;
 }
-
-
 .logo{
     float: left;
     width: 93px;
@@ -65,50 +58,47 @@ a{
 
 /* footer css */
 footer {
-    width : 100%;
-    position: absolute;
-    bottom: 0;
-    /* font-family: 'Righteous', cursive; */
-    font-family: 'Signika', sans-serif;
-
-
+  width : 100%;
+  position: absolute;
+  bottom: 0;
+  /* font-family: 'Righteous', cursive; */
+  font-family: 'Signika', sans-serif;
+  margin-bottom: -194px;
+  /* background-color: #343839; */
 }
 
 .lastSection{
-    position: relative ;
-    padding: 20px 0px ;
-    background-color: rgba(0, 0, 0, 0.7);
-    height: 158px;
-    border-block-end: 1px solid white;
-    margin-top: 30px;
-    color: white;
-    }
+  position: relative ;
+  padding: 20px 0px ;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 158px;
+  border-block-end: 1px solid white;
+  margin-top: 30px;
+  color: white;
+  margin-bottom: -126px;    }
 
 .footLogo{
-    float: left;
-    width: 74px;
-    position: absolute;
-    left: 1px;
-    top: 28px;
-        }
+  float: left;
+  width: 74px;
+  position: absolute;
+  left: 1px;
+  top: 28px;
+  }
 
- .bottomlogo{
-    float: left;
-    width: 75px;
-    position: absolute;
-    left: 1px;
-    top: 23px;
-    font-size: 20px;
-
-        }
-h2{
-    
-    left: 19ps;
-    padding-left: 70px;
-    padding-top: 52px;
-    font-size: 20px;
-    font-family: 'Righteous', cursive;
-
+.bottomlogo{
+  float: left;
+  width: 75px;
+  position: absolute;
+  left: 1px;
+  top: 23px;
+  font-size: 20px;
+  }
+footer h2{
+  font-family: 'Righteous', cursive;
+  left: 19ps;
+  padding-left: 70px;
+  padding-top: 52px;
+  font-size: 20px;
 }
 .aboutAs{
 position: absolute ;
@@ -117,7 +107,6 @@ left: 22%;
 text-align: center ;
 font-size: 12px;
 }
-
 .contact{
 position: absolute ;
 top : 20%;
@@ -135,86 +124,90 @@ font-size: 12px;
 }
 
 h5 {
-    font-size: 20px;
-    padding-bottom: 15px;}
+  font-size: 20px;
+  padding-bottom: 15px;}
 
 .tail {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-  }
-  
-  .tail ol li {
-  display: inline ;
-  padding-left: 17%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.tail ol li {
+  display: inline;
+  padding-left: 24%;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  ol li a{
-    color: white;
-  } 
-  .black{
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 0px;
-    padding-bottom: 11px;  }
+  /* width: 100%; */
+  text-align: center;
+}
 
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    width: 20px;
-    height: 15px;
-    font-size: 19px;
-    margin: 2px;
-    padding: 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-   
-    color: white;
-    padding: 6px;
-    transition: font-size 1s;
+ol li a{
+  color: white;
+} 
+.black{
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: -1px;    padding-bottom: 11px;
+  margin-top: 124px;
+  padding-top: 12px;
+}
 
-  }
-  
-  .fa-twitter {
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  width: 20px;
+  height: 15px;
+  font-size: 19px;
+  margin: 2px;
+  padding: 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
  
-    color: white;
-    padding: 6px;
-    transition: font-size 1s;
-
-  }
-  
-  .fa-google {
-   
-    color: white;
-    padding: 6px;
-    transition: font-size 1s;
-
-  }
-  
-ol li {
+  color: white;
   padding: 6px;
-}
-li{
-  display: inline;
-
-
-}
-a  {
   transition: font-size 1s;
 
 }
+
+.fa-twitter {
+
+  color: white;
+  padding: 6px;
+  transition: font-size 1s;
+
+}
+
+.fa-google {
+ 
+  color: white;
+  padding: 6px;
+  transition: font-size 1s;
+
+}
+
+ol li {
+padding: 6px;
+display: inline;
+
+}
+a  {
+transition: font-size 1s;
+
+}
 ol{
-  padding-top: 18px;
+padding-top: 18px;
 }
 .hover-foot a:hover{
-  font-size: 20px;}
-  
+font-size: 20px;
+text-decoration: none;
+color: white;
+}
+
