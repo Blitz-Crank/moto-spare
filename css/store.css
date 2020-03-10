@@ -39,23 +39,25 @@ text-align: center;
 -moz-animation: glow 2s ease-in-out infinite alternate;
 animation: glow 2s ease-in-out infinite alternate;
 }
+/* 
 @-webkit-keyframes glow {
    from {
     color: #fff;
-  text-shadow: 0 0 10px #00FFF2, 0 0 20px #00FFF2, 0 0 30px #00FFF2, 0 0 40px #00FFF2, 0 0 50px #00FFF2, 0 0 60px #00FFF2, 0 0 70px #00FFF2, 0 0 90px #00FFF2;
+  text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
 }
 to {
    color: gray;
-  text-shadow: 0 0 20px #00FFF2, 0 0 30px #00FFF2, 0 0 40px #00FFF2, 0 0 50px #00FFF2, 0 0 60px #00FFF2, 0 0 70px #00FFF2, 0 0 80px #00FFF2, 0 1 90px #00FFF2;
+  text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
 }
-}
+} */
 /*  */
 /* form Area */
 .store-bg {
   height: 700px;
   position: relative;
-  width: 500px;
+  width: 30%;
   float: right;
+  margin-top: 88px;
 }
 .store-bg:after {
   content: "";
@@ -70,7 +72,7 @@ to {
   height: 700px;
 }
 .buttonpluse {
-  background-color: cyan;
+  background-color:#a20606;
   border: none;
   text-align: center;
   text-decoration: none;
@@ -102,8 +104,8 @@ to {
   float: right;
   position: relative;
   background-color: #b2b2b266;
-  display: none; 
-  transform: rotate();
+  margin-top: -52px;
+  border-radius: 40px
   }
 #saleForm label {
   color: #fff;
@@ -122,15 +124,15 @@ to {
   width: 344px;
   }
 .submitButton{
-  background-color: #CF1407;
+  background-color: #cf1407;
   padding: 10px 36px;
   margin: 18px 80px;
   float: right;
-  box-shadow: -1px -1px 8px #80423D;
+  box-shadow: -1px -1px 8px #80423d;
   color: #fff;
   font-size: 18px;
   font-family: sans-serif;
-  border: 1px solid #80423D;
+  border: 1px solid #80423d;
   letter-spacing: -0.7px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -139,30 +141,58 @@ to {
 /*  */
 /* item list area */
 li img {
-  height: 150px ;
-  width: 150px;
+  height: 243px;
+  margin-bottom: 23px;
+  width: 245px;
   cursor: pointer;
-  padding-left: 22px;
-  }
+  padding-left: 0;
+}
 .items-list h3{
   margin: 0 122px 42px 37px;
   }
 .items-list {
   color: #fff;
   float: left;
-  position: relative;
-  margin: 250px auto 0;
-  display: block;
-  width: 800px;
+  display: inline-block;
+  width: 57%;
   z-index: 999;
   background-color: #ffffff6b;
   padding: 0px;
   border-radius: 50px;
+  margin-top: 179px;
+}
+  .contact-info{
+    padding: 20px 0;
   }
-   
+  #items button {
+    background: #e4d30a;
+    padding: 10px 20px;
+    border: 0;
+    color: #504e4e;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    cursor: pointer;
+}
 h3{
- font-size: 40px;
+ font-size: 60px;
+ color: #e4d30a;
   }
+  p.price {
+    color: #a20606;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+  #items .item-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+  .content-image {
+    text-align: center;
+    font-family: sans-serif;
+}
 #items {
   padding: 10px 0px;
   list-style-type: circle;
@@ -172,25 +202,21 @@ h3{
   width: 1000px;
   }
 #items li {
-  padding: 10px 15px;
+  padding: 3px 23px;
   font-size: 17px;
   color: black;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 50px;
+  position: relative;
+  clear: right;
+  float: left;
   }
 ol li {
   display: block;
   padding: 0px;
   }
 button:hover{
-  background-color: #C95353;
-  border: 1px solid #1B2B2A;
+  background-color: #c95353;
+  border: 1px solid #1b2b2a;
   color: white;
-  }
-p { 
-  display: none;
-  }
-  
-ul li:hover p{
-  display: block ;
   }
