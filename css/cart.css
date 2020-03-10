@@ -1,0 +1,326 @@
+header .style-header{
+    display: block;
+    background-color:rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px;
+    position: sticky;
+    font-family: 'Righteous', cursive;
+    width:100%;
+    height: 100px;
+}
+header h1{
+    font-family: 'Righteous', cursive;
+    font-size:36px;
+    font-weight: bold;
+    margin-left: 91px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ header ul{
+    margin-left: 336px;
+    margin-top: -42px;
+    margin-bottom: 20px;
+    margin-left: 999px;}
+ul li {
+    display: inline;
+    padding: 23px;
+    color:white;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    transition: font-size 1s;
+}
+.hover-a a:hover{
+font-size: 20px;
+color: white;
+text-decoration: none;
+}
+#bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    }
+    * {box-sizing:border-box}
+header .logo{
+    float: left;
+    width: 93px;
+    margin-top: -87px;
+    margin-left: -2px;
+}
+@import url(https://fonts.googleapis.com/css?family=Anton);
+.best-container
+{
+    position: absolute;
+    left: 20px;
+    z-index: 9999;
+    padding-top: 120px;
+    padding-left: 37px;
+}
+.weGive
+{
+    font-family: 'Anton', sans-serif;
+    line-height: 1;
+    letter-spacing: -.07em;
+    color: rgb(211, 17, 17);
+}
+.ks
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    line-height: 1;
+    margin-top: -11px;
+    -webkit-transition: all .9s ease-in-out;
+            transition: all .9s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
+    -webkit-transform: translateX(-1000%);
+        -ms-transform: translateX(-1000%);
+            transform: translateX(-1000%);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    color: #E8AD46;
+}
+.animate .ks
+{
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+}
+.best-container span
+{
+    font-family: 'Anton', Helvetica, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0;
+    color: #fff;
+    filter: alpha(opacity=0);
+}
+.you
+{
+    -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+    transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
+    letter-spacing: -.07em;
+}
+.give
+{
+    -webkit-transition: all .3s ease-in-out 2s;
+    transition: all .3s ease-in-out 2s;
+    letter-spacing: -.07em;
+}
+.we
+{
+    -webkit-transition: all .3s ease-in-out 1.7s;
+    transition: all .3s ease-in-out 1.7s;
+    letter-spacing: -.07em;
+}
+.animate .we
+{
+    font-size: 40px;
+    -webkit-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.animate .give
+{
+    font-size: 60px;
+    -webkit-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.animate .you
+{
+    font-size: 80px;
+    -webkit-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+/* ////////////////// */
+body{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/542/50/545/simple-background-blue-simple-minimalism-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1500%;
+}
+main{
+    margin: 200px auto;
+}
+table {
+    border-collapse: collapse;
+    margin: 200px auto;
+    width: 800px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  
+  tr:hover {background-color:#f5f5f5;}
+
+
+  td img {
+    width: 100px;
+    height: 80px;
+  }
+/* footer css  */
+footer {
+    width : 100%;
+    position: absolute;
+    bottom: 0;
+    /* font-family: 'Righteous', cursive; */
+    font-family: 'Signika', sans-serif;
+    margin-bottom: -254px;
+}
+.lastSection{
+    position: relative ;
+    padding: 20px 0px ;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 158px;
+    border-block-end: 1px solid white;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: -126px;    }
+.footLogo{
+    float: left;
+    width: 74px;
+    position: absolute;
+    left: 1px;
+    top: 28px;
+    }
+ .bottomlogo{
+    float: left;
+    width: 75px;
+    position: absolute;
+    left: 1px;
+    top: 23px;
+    font-size: 20px;
+    }
+footer h2{
+    font-family: 'Righteous', cursive;
+    left: 19ps;
+    padding-left: 70px;
+    padding-top: 52px;
+    font-size: 20px;
+}
+.aboutAs{
+position: absolute ;
+top : 20%;
+left: 22%;
+text-align: center ;
+font-size: 12px;
+}
+.contact{
+position: absolute ;
+top : 20%;
+left: 50%;
+text-align: center ;
+font-size: 12px;
+}
+.socialMedia{
+position: absolute ;
+top: 20%;
+left : 80%;
+text-align: center ;
+font-size: 12px;
+}
+h5 {
+    font-size: 20px;
+    padding-bottom: 15px;}
+.tail {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  
+  .tail ol li {
+    display: inline;
+    padding-left: 24%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 100%; */
+    text-align: center;
+  }
+  
+  ol li a{
+    color: white;
+  } 
+  .black{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: -1px;    padding-bottom: 11px;
+    margin-top: 124px;
+    padding-top: 12px;
+}
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    width: 20px;
+    height: 15px;
+    font-size: 19px;
+    margin: 2px;
+    padding: 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+   
+    color: white;
+    padding: 6px;
+    transition: font-size 1s;
+  }
+  
+  .fa-twitter {
+ 
+    color: white;
+    padding: 6px;
+    transition: font-size 1s;
+  }
+  
+  .fa-google {
+   
+    color: white;
+    padding: 6px;
+    transition: font-size 1s;
+  }
+  
+ol li {
+  padding: 6px;
+  display: inline;
+}
+a  {
+  transition: font-size 1s;
+}
+ol{
+  padding-top: 18px;
+}
+.hover-foot a:hover{
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+  .car-background{
+    width: 100%;
+    height: 744px;
+  }
+ .cars-logo{
+    display: inline;
+    padding: 157px;
+}
+/* ///////////////////////////////// */

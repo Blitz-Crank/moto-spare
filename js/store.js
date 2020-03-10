@@ -141,29 +141,24 @@ console.log(listSelector);
 
 
 for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
-  // console.log(listSelector[eventCount]);
+  console.log(listSelector[eventCount]);
   // console.log(listSelector.length);
   listSelector[eventCount].addEventListener('click', function (event) {
     event.preventDefault();
-    // console.log(event.target.id);
+    console.log(event.target.id);
     var theTarget = event.target;
-
-    // if (theTarget.id ===`item${eventCount}`){
-    var selectedEl = document.getElementById(`list${eventCount}`);
-    pickedArr.push(all[Number(theTarget.id.substring(3))]);
+    console.log(itemsArray[Number(theTarget.id.substring(4))]);
+    console.log((theTarget.id.substring(4)));
+    if (theTarget.id ===`item${Number(theTarget.id.substring(4))}`){
+    var selectedEl = document.getElementById(`list${Number(theTarget.id.substring(4))}`);
+    pickedArr.push(itemsArray[Number(theTarget.id.substring(4))]);
     setItemCart();
-    // console.log(pickedArr);
+    console.log(pickedArr);
 
-    // }
+    }
   });
   // console.log(pickedArr);
+  
 }
 
 // console.log(listSelector.length);
-
-
-
-
-
-
-
