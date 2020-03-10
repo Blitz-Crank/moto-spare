@@ -5,11 +5,9 @@ body{
   background-size: cover;
   height: 1500px;
 }
-
 main {
   height: 941px;
 }
-
 h3{
   color: white;
   font-family: cursive;
@@ -19,11 +17,8 @@ h3{
   text-align: center;
   margin-left: 0px;
 }
-
-
 /* neon part  */
 @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
-
 .motto {
  width: 431px;
  height: 0px;
@@ -32,12 +27,10 @@ h3{
  align-items: center;
  font-family: 'Codystar';
 }
-
 .neons {
  margin-top: 10rem;
  text-align: center;
 }
-
 .neons h3 {
 font-size: 30px;
 text-align: center;
@@ -46,28 +39,27 @@ text-align: center;
 -moz-animation: glow 2s ease-in-out infinite alternate;
 animation: glow 2s ease-in-out infinite alternate;
 }
-
-
+/* 
 @-webkit-keyframes glow {
    from {
     color: #fff;
   text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
 }
-
 to {
    color: gray;
   text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
 }
-}
-
+} */
 /*  */
-
 /* form Area */
 .store-bg {
   height: 700px;
   position: relative;
+  width: 30%;
+  float: right;
+  margin-top: 88px;
 }
-.store-bg:after {
+/* .store-bg:after {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0.5;
@@ -78,10 +70,9 @@ to {
   position: fixed;
   z-index: 9;
   height: 700px;
-}
-
+} */
 .buttonpluse {
-  background-color: cyan;
+  background-color:#a20606;
   border: none;
   text-align: center;
   text-decoration: none;
@@ -103,11 +94,7 @@ to {
   background-color: rgb(160, 231, 231);
   color: white;
   cursor: pointer;
-
 }
-
-
-
 #saleForm{
   clear: both;
   padding: 20px 26px;
@@ -117,10 +104,9 @@ to {
   float: right;
   position: relative;
   background-color: #b2b2b266;
-  display: none; 
-  transform: rotate();
+  margin-top: -52px;
+  border-radius: 40px
   }
-
 #saleForm label {
   color: #fff;
   display: block;
@@ -137,7 +123,6 @@ to {
   height: 36px;
   width: 344px;
   }
-
 .submitButton{
   background-color: #cf1407;
   padding: 10px 36px;
@@ -154,36 +139,60 @@ to {
   outline: none;
   }
 /*  */
-
-
 /* item list area */
 li img {
-  height: 150px ;
-  width: 150px;
+  height: 243px;
+  margin-bottom: 23px;
+  width: 245px;
   cursor: pointer;
-  padding-left: 22px;
-  }
-
+  padding-left: 0;
+}
 .items-list h3{
   margin: 0 122px 42px 37px;
   }
 .items-list {
   color: #fff;
   float: left;
-  position: relative;
-  margin: -400px auto 0;
-  display: block;
-  width: 800px;
+  display: inline-block;
+  width: 57%;
   z-index: 999;
   background-color: #ffffff6b;
   padding: 0px;
   border-radius: 50px;
+  margin-top: 179px;
+}
+  .contact-info{
+    padding: 20px 0;
   }
-   
+  #items button {
+    background: #e4d30a;
+    padding: 10px 20px;
+    border: 0;
+    color: #504e4e;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    cursor: pointer;
+}
 h3{
- font-size: 40px;
+ font-size: 60px;
+ color: #e4d30a;
   }
-
+  p.price {
+    color: #a20606;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+  #items .item-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+  .content-image {
+    text-align: center;
+    font-family: sans-serif;
+}
 #items {
   padding: 10px 0px;
   list-style-type: circle;
@@ -192,30 +201,22 @@ h3{
   margin-left: -46px;
   width: 1000px;
   }
-
 #items li {
-  padding: 10px 15px;
+  padding: 3px 23px;
   font-size: 17px;
   color: black;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 50px;
+  position: relative;
+  clear: right;
+  float: left;
   }
 ol li {
   display: block;
   padding: 0px;
   }
-
 button:hover{
   background-color: #c95353;
   border: 1px solid #1b2b2a;
   color: white;
   }
-p { 
-  display: none;
-  }
-  
-ul li:hover p{
-  display: block ;
-  }
-
-/*  */

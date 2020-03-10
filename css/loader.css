@@ -1,21 +1,25 @@
-body {
+.loader-div {
   margin: 0;
   height: 100vh;
   display: flex;
+  position: fixed;
+  z-index: 999999999;
+  width: 100%;
   align-items: center;
   justify-content: center;
   background-color: #333;
+  animation: remove-loader 8s forwards;
 }
-
-.loader {
+.loader-div .loader {
   width: 11.7em;
   height: 4.2em;
   font-size: 16px;
-  color: lightcyan;
+  color: #E8AD46;
   position: relative;
+  z-index: 1001;
+  
 }
-
-.car {
+.loader-div .car {
   position: absolute;
   width: inherit;
   height: 2em;
@@ -23,34 +27,49 @@ body {
   top: 1.5em;
   border-radius: 0 5em 1em 0 / 0 4em 1em 0;
 }
-
 @keyframes run {
   0% {
       transform: translate(0.2em, 0.1em) rotate(0deg);
   }
-
   20% {
       transform: translate(0.1em, 0.2em) rotate(1deg);
   }
-
   40% {
       transform: translate(0.1em, -0.1em) rotate(-1deg);
   }
-
   60% {
       transform: translate(-0.1em, 0.2em) rotate(0deg);
   }
-
   80% {
       transform: translate(-0.1em, 0.1em) rotate(1deg);
   }
-
   100% {
       transform: translate(0.2em, 0.1em) rotate(-1deg);
+      
   }
 }
-
-.car::before {
+ @keyframes  fade-in{
+  0%{
+      opacity: 0;
+  }
+  30%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+@keyframes remove-loader{
+  0%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      display: none;
+      z-index: 0;
+  }
+}
+.loader-div .car::before {
   content: '';
   position: absolute;
   width: 0;
@@ -62,7 +81,6 @@ body {
   transform-origin: left;
   transform: rotate(-45deg);
 }
-
 .body {
   position: absolute;
   width: 7.5em;
@@ -73,7 +91,6 @@ body {
   top: -1.5em;
   left: 1.2em;
 }
-
 .body::before {
   content: '';
   position: absolute;
@@ -84,7 +101,6 @@ body {
   left: -0.4em;
   top: -0.4em;
 }
-
 .wheels::before,
 .wheels::after {
   content: '';
@@ -128,21 +144,17 @@ body {
       );
   animation: rotating 0.5s linear infinite;
 }
-
 .wheels::before {
   left: 1.2em;
 }
-
 .wheels::after {
   right: 0.8em;
 }
-
 @keyframes rotating {
   to {
       transform: rotate(1turn);
   }
 }
-
 .strikes {
   position: absolute;
   width: 1em;
@@ -152,41 +164,33 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .strikes span {
   height: 0.1em;
   background-color: lightcyan;
   animation: drift 0.2s linear infinite;
   animation-delay: calc(var(--n) * -0.05s);
 }
-
 @keyframes drift {
   from {
       transform: translate(3.5em);
   }
-
   to {
       transform: translate(-8em);
       filter: opacity(0);
   }
 }
-
 .strikes span:nth-child(1) {
   --n: 1;
 }
-
 .strikes span:nth-child(2) {
   --n: 2;
 }
-
 .strikes span:nth-child(3) {
   --n: 3;
 }
-
 .strikes span:nth-child(4) {
   --n: 4;
 }
-
 .strikes span:nth-child(5) {
   --n: 5;
 }
