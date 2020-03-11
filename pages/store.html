@@ -58,7 +58,7 @@
                 <label for="itemPhoto">Select an Image:</label>
                 <!-- accept='image/*' onchange='openFile(event)' -->
                  <input type="file" id="itemPhoto" name="itemPhoto ">          
-                <button type="submit" class="submitButton">Submit </button>
+                 <button type="submit" class="submitButton" onclick="refreshPage()">Submit </button>
               </fieldset>
             </form>
         </div>
@@ -118,7 +118,13 @@
         function displayForm() {
             document.getElementById('saleForm').style.display = 'block';
           }
-         
+        
+        function unDisplayForm() {
+    document.getElementById('saleForm').style.display = 'none';
+  }
+      function refreshPage(){
+            window.location.reload();
+        }     
     </script>
         <script src="../js/store.js"></script>
   </body>

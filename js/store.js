@@ -30,7 +30,7 @@ function StoreItems(name, phone, itemName, prise, itemPhoto) {
 
 
 function renderNewItem() {
-  itemsList.innerHTML = "";
+  itemsList.innerHTML = '';
   for(var i = 0 ; i< itemsArray.length ; i++){
     var itemsLI = document.createElement('li');
     var img = document.createElement('img');
@@ -48,7 +48,7 @@ function renderNewItem() {
     var priseLi = document.createElement('p');
     priseLi.classList.add('price');
     priseLi.textContent = `prise : ${itemsArray[i].prise}`;
-    console.log(itemsArray[0]);
+    // console.log(itemsArray[0]);
     itemsLI.appendChild(priseLi);
   
     var contactDiv = document.createElement('div');
@@ -141,19 +141,21 @@ console.log(listSelector);
 
 
 for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
-  console.log(listSelector[eventCount]);
+  // console.log(listSelector[eventCount]);
   // console.log(listSelector.length);
+  console.log(eventCount);
   listSelector[eventCount].addEventListener('click', function (event) {
     event.preventDefault();
-    console.log(event.target.id);
+    // console.log(event.target.id);
     var theTarget = event.target;
-    console.log(itemsArray[Number(theTarget.id.substring(4))]);
-    console.log((theTarget.id.substring(4)));
+    // console.log(itemsArray[Number(theTarget.id.substring(4))]);
+    // console.log((theTarget.id.substring(4)));
     if (theTarget.id ===`item${Number(theTarget.id.substring(4))}`){
-    var selectedEl = document.getElementById(`list${Number(theTarget.id.substring(4))}`);
+    // var selectedEl = document.getElementById(`list${Number(theTarget.id.substring(4))}`);
     pickedArr.push(itemsArray[Number(theTarget.id.substring(4))]);
-    setItemCart();
     console.log(pickedArr);
+    setItemCart();
+    
 
     }
   });
