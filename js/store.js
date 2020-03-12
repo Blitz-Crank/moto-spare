@@ -144,10 +144,6 @@ for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
     console.log(pickedArr);
     setItemCart();
     
-<<<<<<< HEAD
-=======
-
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     }
   });
   // console.log(pickedArr);

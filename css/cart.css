@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/* header CSS */
-=======
 /* header CSS  */
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 header{
   display: block;
   background-color: rgba(0, 0, 0, 0.4);;
@@ -19,19 +15,11 @@ h1{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
-ul{
-  margin-left: 336px;
-  margin-top: -42px;
-  margin-bottom: 20px;
-  margin-left: 999px;}
-=======
 header ul{
   margin-left: 336px;
   margin-top: -42px;
   margin-bottom: 20px;
   margin-left: 907px;}
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 ul li {
   display: inline;
   padding: 23px;
@@ -87,19 +75,10 @@ table {
   
   tr:hover {background-color: #645b6554;
   }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
   td img {
     width: 100px;
     height: 80px;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 /* footer css */
 footer {
   width : 100%;
@@ -107,11 +86,7 @@ footer {
   bottom: 0;
   /* font-family: 'Righteous', cursive; */
   font-family: 'Signika', sans-serif;
-<<<<<<< HEAD
-  margin-bottom: -710px;
-=======
   margin-bottom: -400px;
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 }
 .lastSection{
   position: relative ;
@@ -172,10 +147,6 @@ h5 {
   background-color: rgb(31, 27, 27);
   width: 100%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 .tail ol li {
   /* display: inline; */
   padding-left: 24%;
@@ -184,10 +155,6 @@ h5 {
   /* width: 100%; */
   text-align: center;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 ol li a{
   color: white;
 } 
@@ -221,51 +188,26 @@ footer ul {
   margin: 2px;
   padding: 2px;
 }
-<<<<<<< HEAD
-
 .fa:hover {
     opacity: 0.7;
 }
-
-=======
-.fa:hover {
-    opacity: 0.7;
-}
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 .fa-facebook {
  
   color: white;
   padding: 6px;
   transition: font-size 1s;
 }
-<<<<<<< HEAD
-
 .fa-twitter {
-
   color: white;
   padding: 6px;
   transition: font-size 1s;
 }
-
-.fa-google {
- 
-=======
-.fa-twitter {
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
-  color: white;
-  padding: 6px;
-  transition: font-size 1s;
-}
-<<<<<<< HEAD
-
-=======
 .fa-google {
  
   color: white;
   padding: 6px;
   transition: font-size 1s;
 }
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 ol li {
 padding: 6px;
 display: inline;
@@ -284,17 +226,6 @@ color: white;
 .car-background{
   width: 100%;
   height: 744px;
-<<<<<<< HEAD
-}
-.cars-logo{
-  display: inline;
-  padding: 157px;
-}
-
-main{
-  font-family: 'Satisfy', cursive;
-
-=======
 }
 .cars-logo{
   display: inline;
@@ -302,5 +233,4 @@ main{
 }
 main{
   font-family: 'Satisfy', cursive;
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 }

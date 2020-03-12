@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/* CSS for the header */
-=======
 /* CSS for the header  */
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 header {
     display: block;
     background-color:rgba(0, 0, 0, 0.5);
@@ -75,10 +71,6 @@ section div {
     cursor: pointer;
     display: -webkit-inline-box;
     margin-right: -85px;
-<<<<<<< HEAD
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 }
 p {
     font-size: 30px;
@@ -87,24 +79,13 @@ p {
     font-weight: 600;
     font-family: cursive;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 .test {
     animation: fadein 2s;
     margin-top: 112px;
     margin-left: 259px;
-<<<<<<< HEAD
-    background-color: #a0c29f;
-    margin-bottom: 49px;
-}
-
-=======
     background-color: #A0C29F;
     margin-bottom: 49px;
 }
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 @keyframes fadein {
     from {
         opacity:0;
@@ -113,11 +94,6 @@ p {
         opacity:1;
     }
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 /* footer css */
 footer {
     width : 100%;
@@ -274,10 +250,6 @@ footer {
       display: block;
       padding: 7px;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     /* main css */
     
 .modal {
@@ -366,17 +338,6 @@ footer {
   }
   
 .weel:hover{
-<<<<<<< HEAD
-        background-color:   #ffffb3;  }
-.mirror:hover{
-        background-color:   #ffffb3;  }
-.break:hover{
-        background-color:   #ffffb3;  }
-.stearing:hover{
-        background-color:   #ffffb3;  }
-.light:hover{
-        background-color:   #ffffb3;  }
-=======
         background-color:   #FFFFB3;  }
 .mirror:hover{
         background-color:   #FFFFB3;  }
@@ -386,4 +347,3 @@ footer {
         background-color:   #FFFFB3;  }
 .light:hover{
         background-color:   #FFFFB3;  }
->>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
