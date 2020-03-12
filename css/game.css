@@ -89,7 +89,6 @@ p {
 .bt{
     animation: fadein 2s;
 }
-
 @keyframes fadein {
     from {
         opacity:0;
@@ -100,14 +99,14 @@ p {
 }
 /* footer css */
 footer {
-    width : 100%;
-    position: absolute;
-    bottom: 0;
-    /* font-family: 'Righteous', cursive; */
-    font-family: 'Signika', sans-serif;
-    margin-bottom: -252px;
-    /* background-color: #343839; */
-    }
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* font-family: 'Righteous', cursive; */
+  font-family: 'Signika', sans-serif;
+  margin-bottom: -523px;
+  /* background-color: #343839; */
+}
     
     .lastSection{
     position: relative ;
@@ -321,7 +320,7 @@ footer {
   .modal-body {padding: 20px 16px; background-color: white;}
   
   button {
-    background-color: rgb(204, 179, 88); 
+    background-color: rgb(204, 179, 88);
     border: none;
     color: white;
     padding: 20px;
@@ -332,9 +331,9 @@ footer {
     cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-left:668px;
-    margin-bottom: 271px;
-  }
+    margin-left: 668px;
+    /* margin-bottom: 0px; */
+}
   button:active {
     background-color: #3E8E41;
     box-shadow: 0 5px #666;
@@ -351,14 +350,10 @@ footer {
         background-color:   #FFFFB3;  }
 .light:hover{
         background-color:   #FFFFB3;  }
-
-
 div#stearing {
  margin-left: -685px;
  margin-bottom: -290px;
         }
-
 div#light {
     margin-bottom: -290px;
 }
-
