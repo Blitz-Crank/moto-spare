@@ -1,4 +1,5 @@
 /* header CSS  */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 header{
   display: block;
   background-color: rgba(0, 0, 0, 0.4);;
@@ -58,6 +59,7 @@ body{
 }
 main{
     margin: 200px auto;
+    color: aliceblue;
 }
 table {
     border-collapse: collapse;
@@ -232,5 +234,39 @@ color: white;
   padding: 157px;
 }
 main{
-  font-family: 'Satisfy', cursive;
+  font-family: 'Raleway', sans-serif;
 }
+/* test */
+.push_button {
+	width:220px;
+	height:40px;
+	text-align:center;
+	text-decoration:none;
+	line-height:43px;
+	font-family:'Oswald', Helvetica;
+  display: block;
+  margin: 2px;
+  margin-top: -146px;
+  margin-left: 561px;
+  border-radius: 5px;
+
+}
+.red:hover{
+  background-image: linear-gradient(to bottom, rgba(210, 80, 80, 0.25), rgb(210, 134, 80));
+  border-radius: 5px;
+  /* box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 rgb(246, 178, 108), 0 4px 2px rgba(0, 0, 0, .5); */
+}
+
+.red {
+  background-image: -webkit-linear-gradient(top, rgb(246, 178, 108), rgb(54, 72, 82));
+  background-image: -moz-linear-gradient(top, rgb(104, 80, 210), rgb(104, 80, 210));
+  background-image: -ms-linear-gradient(top, rgb(104, 80, 210), rgb(104, 80, 210));
+  background-image: -o-linear-gradient(top, rgb(104, 80, 210), rgb(104, 80, 210));
+  background-image: linear-gradient(top, rgb(104, 80, 210), rgb(104, 80, 210));
+}
+
+
+
+
+
+
