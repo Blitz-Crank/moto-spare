@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Simonetta:400,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Viaoda+Libre&display=swap" rel="stylesheet">
 
-
+    <link href="https://fonts.googleapis.com/css?family=Knewave|Lobster|Satisfy|Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Crete+Round|Oswald|Sen|Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/store.css">
-
     <title>Store</title>
 </head>
 <body style="background-image: url(../img/newback3.jpg);">
@@ -30,7 +30,6 @@
                 <li><a href="aboutUs.html">About Us</a></li></ul>
         
     </header>
-
     <main>
 
         <!-- <div class="motto">
@@ -44,8 +43,10 @@
         </div> -->
 
         <div class="store-bg">
-            <button class="buttonpluse" onclick="displayForm()">+</button>
-            <form id="saleForm"> 
+            <button class="buttonpluse" id="buttonpluse" onclick="displayForm()">+</button>
+            <button class="buttonMi" id="buttonMi" onclick="unDisplayForm()" style="display: none;">-</button>
+
+            <form id="saleForm" style="display: none;"> 
               <fieldset>
                 <label>Full Name</label>
                   <input type="text" name="name" placeholder="Enter your Name" required>
@@ -62,7 +63,6 @@
               </fieldset>
             </form>
         </div>
-
         <div class="items-list" id="itemsDiv">
             <h3>Our store items</h3>
             <ul id="items">
@@ -86,7 +86,6 @@
                     <li><a href="">Raghad Alquran</a></li>
                     <li><a href="">Yousef Alshun</a></li>
                 </ol>
-
             </div>
             <div class="contact hover-foot">
                 <ul class="ul-foot-contact">
@@ -111,7 +110,6 @@
                 <li>Alpha version </li>
             </ol>
         </span>     
-
     </footer>
     <script>
         

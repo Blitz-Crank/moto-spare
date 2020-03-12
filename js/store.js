@@ -1,7 +1,4 @@
 'use strict';
-
-
-
 var saleForm = document.getElementById('saleForm');
 var itemsList = document.getElementById('items');
 // firstItems();
@@ -16,19 +13,14 @@ function StoreItems(name, phone, itemName, prise, itemPhoto) {
   this.itemName = itemName;
   this.prise = prise;
   this.itemPhoto = itemPhoto;
-
   // add every new item to the array
-
   itemsArray.push(this);
   // setItem();
 }
 // function Allthing(h) {
 //   all.push(this);
 // }
-
 // set the global array to empty
-
-
 function renderNewItem() {
   itemsList.innerHTML = '';
   for(var i = 0 ; i< itemsArray.length ; i++){
@@ -86,28 +78,19 @@ function renderNewItem() {
   
     itemsList.appendChild(itemsLI);
   }
-
-
 }
-
-
-
-
 var pickedArr = [];
-
 // set item for all
 function setItem() {
   var newItem = JSON.stringify(itemsArray);
   //console.log(newItem);
   localStorage.setItem('newItem', newItem);
-
 }
 function setItemCart() {
   var cartItem = JSON.stringify(pickedArr);
   //console.log(newItem);
   localStorage.setItem('picked', cartItem);
 }
-
 //get item for all
 function getItem() {
   var storedItem = localStorage.getItem('newItem');
@@ -117,16 +100,12 @@ function getItem() {
     renderNewItem();
   }
 }
-
 saleForm.addEventListener('submit', handleSubmit);
 getItem();
-
 // this fun will take all the value from the form on submit
 function handleSubmit(event) {
   event.preventDefault();
-
   var formId = document.getElementById('saleForm');
-
   // get all the values from the form
   var part = event.target;
   var name = part.name.value;
@@ -144,15 +123,11 @@ function handleSubmit(event) {
   formId.style.display = 'none';
   setItem();
 }
-
 //calling events
 // Add an event listener to the submit button
-
 // for cart
 var listSelector = document.querySelectorAll('.list');
 console.log(listSelector);
-
-
 for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
   // console.log(listSelector[eventCount]);
   // console.log(listSelector.length);
@@ -169,14 +144,12 @@ for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
     console.log(pickedArr);
     setItemCart();
     selectedEl.textContent = 'added';
-    selectedEl.style.backgroundColor = 'red';
-
+    selectedEl.style.backgroundColor = 'rgb(224, 77, 77)';
     
-
     }
   });
   // console.log(pickedArr);
   
 }
-
 // console.log(listSelector.length);
+

@@ -8,10 +8,7 @@ function getItemCart() {
     }
   }
   getItemCart();
-
-
 //   console.log(itemsArray);
-
 var table= document.getElementById('table');
 
 for(var i=0; i < theCopy.length ; i++){
@@ -21,24 +18,20 @@ for(var i=0; i < theCopy.length ; i++){
     var trELempty = document.createElement('td')
     trELempty.textContent=' ';
     trEl.appendChild(trELempty);
-
     var tdEl = document.createElement('td');
     var img = document.createElement('img');
     img.setAttribute('src',theCopy[i].itemPhoto)
 
     tdEl.appendChild(img);
     trEl.appendChild(tdEl);
-
     var tdEl2 = document.createElement('td');
 
     tdEl2.textContent=theCopy[i].itemName;
     trEl.appendChild(tdEl2);
-
     var tdEl3 = document.createElement('td');
 
     tdEl3.textContent=theCopy[i].prise;
     trEl.appendChild(tdEl3);
-
     var tdEl4 = document.createElement('td');
 
     tdEl4.textContent=theCopy[i].phone;

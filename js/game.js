@@ -31,7 +31,6 @@ else {
   alert('Why not ... Just CLICK on the boxes to show the questions... ');
 }
 var sec = document.querySelector('#section');
-
 sec.addEventListener('click', question);
 function question (e){
   console.log(e.target);
