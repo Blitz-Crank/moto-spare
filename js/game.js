@@ -98,12 +98,8 @@ function question (e){
     lightt.style.backgroundSize = 'cover';
   }
   alertScore.textContent = `Great job .... your Score is : ${score} / 5 `;
-<<<<<<< HEAD
-}
-=======
 
 }
 
 
 
->>>>>>> fa9fa01e75c7ebf6966fdcae511f2074e1e8a448
