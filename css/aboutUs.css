@@ -236,6 +236,7 @@ header{
   font-family: 'Righteous', cursive;
 }
 h1{
+<<<<<<< HEAD
   font-family: 'Righteous', cursive;
   font-size:36px;
   font-weight: bold;
@@ -248,6 +249,20 @@ ul{
   margin-top: -42px;
   margin-bottom: 20px;
   margin-left: 999px;}
+=======
+    font-family: 'Righteous', cursive;
+    font-size:36px;
+    font-weight: bold;
+    margin-left: 91px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+header ul{
+  margin-left: 336px;
+  margin-top: -42px;
+  margin-bottom: 20px;
+  margin-left: 907px;}
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 ul li {
   display: inline;
   padding: 23px;

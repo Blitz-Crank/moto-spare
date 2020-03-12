@@ -1,5 +1,32 @@
 'use strict';
 var score =0;
+<<<<<<< HEAD
+=======
+console.log(score);
+var alertScore = document.getElementById('alertScore');
+var ScoreHeader = document.getElementById('ScoreHeader');
+ScoreHeader.textContent = 'Your Score ...  ';
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementById('myBtn');
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = 'block';
+};
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = 'none';
+};
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+};
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 var Uname = prompt('Welcome to our Gussing Game, Whats your name ?');
 if(confirm(`Hello  ${ Uname } are you ready for the game ? :) `)){
   alert('OK lets Start ..... ');}
@@ -7,6 +34,10 @@ else {
   alert('Why not ... Just try it and you will like it ... ');
 }
 var sec = document.querySelector('#section');
+<<<<<<< HEAD
+=======
+
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 sec.addEventListener('click', question);
 function question (e){
   console.log(e.target);
@@ -27,10 +58,20 @@ function question (e){
     var mirror =prompt('Guess who I am .... I am on the right, left and middle of the car , you use me to see the cars behind you  ??? ').toLowerCase();
     if(mirror === 'mirror'){
       alert('Correct I am a Mirror ..');
+<<<<<<< HEAD
       score++;}
     else {
       alert('No .. I am a Mirror ');
     }
+=======
+      score++; 
+      console.log(score);}
+    else {
+      alert('No .. I am a Mirror ');
+      
+    }
+    console.log(score);
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     var mirrorr = document.getElementById('mirror');
     mirrorr.style.backgroundImage = 'url(\'../img/mirror.jpg\')';
     mirrorr.style.backgroundSize = 'cover';
@@ -38,7 +79,12 @@ function question (e){
     var breaks =prompt('Guess who I am .... I reduce the speed of the car and stop it ??? ').toLowerCase();
     if(breaks === 'breaks' || breaks === 'break'){
       alert('Correct I am the Breaks ..');
+<<<<<<< HEAD
       score++;}
+=======
+      score++;
+      console.log(score); console.log(score);}
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     else {
       alert('No .. I am the Breaks ');
     }
@@ -49,7 +95,12 @@ function question (e){
     var stearing =prompt('Guess who I am .... I am the wheel that used to steer the car ??? ').toLowerCase();
     if(stearing === 'steering'){
       alert('Correct I am the Steering ..');
+<<<<<<< HEAD
       score++;}
+=======
+      score++;
+      console.log(score);}
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     else {
       alert('No .. I am the Steering ');
     }
@@ -60,7 +111,11 @@ function question (e){
     var light =prompt('Guess who I am .... II turn on at night to light the way in front of the car  ??? ').toLowerCase();
     if(light === 'light' || light === 'lights'){
       alert('Correct I am the car Lights ..');
+<<<<<<< HEAD
       score++;}
+=======
+      score++; console.log(score);}
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     else {
       alert('No .. I am the car Lights ');
     }
@@ -68,6 +123,7 @@ function question (e){
     lightt.style.backgroundImage = 'url(\'../img/light.png\')';
     lightt.style.backgroundSize = 'cover';
   }
+<<<<<<< HEAD
 }
 // var battary =prompt('Guess who I am .... I am one of the main items and I provied the power for the car  ??? ').toLowerCase();
 // if(battary === 'battary'){
@@ -135,4 +191,9 @@ window.onclick = function(event) {
   }
 };
 
+=======
+  alertScore.textContent = `Great job .... your Score is : ${score} / 5 `;
+
+}
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
 

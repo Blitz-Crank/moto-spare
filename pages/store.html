@@ -32,6 +32,7 @@
     </header>
     <main>
 
+<<<<<<< HEAD
       <!-- <div class="best-container">
         <div class="weGive">
           <span class="we">With us</span><span class="give">you can sell</span><span class="you"></span>
@@ -42,6 +43,8 @@
         style="background-image: url(img/1920x1080_A1814532_large.webp); background-repeat: no-repeat;background-size: cover;">
       </div> -->
 
+=======
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
         <!-- <div class="motto">
             <div class="container">
                 <div class="row">
@@ -69,12 +72,16 @@
                 <label for="itemPhoto">Select an Image:</label>
                 <!-- accept='image/*' onchange='openFile(event)' -->
                  <input type="file" id="itemPhoto" name="itemPhoto ">          
-                <button type="submit" class="submitButton">Submit </button>
+                 <button type="submit" class="submitButton" onclick="refreshPage()">Submit </button>
               </fieldset>
             </form>
         </div>
         <div class="items-list" id="itemsDiv">
+<<<<<<< HEAD
             <h3>Our Store Items</h3>
+=======
+            <h3>Our store items</h3>
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
             <ul id="items">
                     
             </ul>
@@ -98,12 +105,21 @@
                 </ol>
             </div>
             <div class="contact hover-foot">
+<<<<<<< HEAD
               <ul class="ul-foot-contact">
                 <h5> Contact Us</h5>
                 <li>Phone Number :+962 785311513</li>
                 <li>Email : blitzCrank@gmail.com </li>
               </ul>
             </div>
+=======
+                <ul class="ul-foot-contact">
+                  <h5> Contact Us</h5>
+                  <li>Phone Number :+962 785311513</li>
+                  <li>Email : blitzCrank@gmail.com </li>
+                </ul>
+              </div>
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
             <div class="socialMedia">
                 <ol> <h5>Follow Us </h5>
                     <li><a href="#" class="fa fa-facebook"></a></li>
@@ -128,6 +144,7 @@
             document.getElementById('buttonpluse').style.display = 'none';
             document.getElementById('buttonMi').style.display = 'block';
             
+<<<<<<< HEAD
           }
           function unDisplayForm() {
             document.getElementById('saleForm').style.display = 'none';
@@ -141,6 +158,17 @@
         // function displaypluse(){
           
         //  }
+=======
+          }
+          function unDisplayForm() {
+            document.getElementById('saleForm').style.display = 'none';
+            document.getElementById('buttonMi').style.display = 'none';
+            document.getElementById('buttonpluse').style.display = 'block';
+          }
+      function refreshPage(){
+            window.location.reload();
+        }     
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     </script>
         <script src="../js/store.js"></script>
   </body>

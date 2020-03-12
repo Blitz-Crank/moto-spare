@@ -43,6 +43,17 @@ function renderNewItem() {
     // console.log(itemsArray[0]);
     itemsLI.appendChild(priseLi);
   
+    // var contactDiv = document.createElement('div');
+    // contactDiv.classList.add('contact-info');
+    // var buttonEl = document.createElement('button');
+    // buttonEl.textContent = 'Add to favourite';
+    // contactDiv.appendChild(buttonEl);
+    // var aTel = document.createElement('a');
+    // aTel.setAttribute('href', `tel:${itemsArray[i].phone}`);
+    // aTel.textContent = 'Click to Call!';
+    // contactDiv.appendChild(aTel);
+
+    //  itemsLI.appendChild(contactDiv);
     var contactDiv = document.createElement('div');
     contactDiv.setAttribute('id','callme');
     contactDiv.classList.add('contact-info');
@@ -55,6 +66,7 @@ function renderNewItem() {
     // aTel.textContent = 'Click to Call!';
     contactDiv.appendChild(aTel);
      itemsLI.appendChild(contactDiv);
+     
   
   
     var addToCart = document.createElement('p');
@@ -132,6 +144,10 @@ for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
     console.log(pickedArr);
     setItemCart();
     
+<<<<<<< HEAD
+=======
+
+>>>>>>> c96fbbffa62d47d679750e28d99df45ac42df926
     }
   });
   // console.log(pickedArr);
