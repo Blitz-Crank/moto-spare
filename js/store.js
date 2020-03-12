@@ -30,7 +30,7 @@ function StoreItems(name, phone, itemName, prise, itemPhoto) {
 
 
 function renderNewItem() {
-  itemsList.innerHTML = "";
+  itemsList.innerHTML = '';
   for(var i = 0 ; i< itemsArray.length ; i++){
     var itemsLI = document.createElement('li');
     var img = document.createElement('img');
@@ -48,20 +48,33 @@ function renderNewItem() {
     var priseLi = document.createElement('p');
     priseLi.classList.add('price');
     priseLi.textContent = `prise : ${itemsArray[i].prise}`;
-    console.log(itemsArray[0]);
+    // console.log(itemsArray[0]);
     itemsLI.appendChild(priseLi);
   
+    // var contactDiv = document.createElement('div');
+    // contactDiv.classList.add('contact-info');
+    // var buttonEl = document.createElement('button');
+    // buttonEl.textContent = 'Add to favourite';
+    // contactDiv.appendChild(buttonEl);
+    // var aTel = document.createElement('a');
+    // aTel.setAttribute('href', `tel:${itemsArray[i].phone}`);
+    // aTel.textContent = 'Click to Call!';
+    // contactDiv.appendChild(aTel);
+
+    //  itemsLI.appendChild(contactDiv);
     var contactDiv = document.createElement('div');
+    contactDiv.setAttribute('id','callme');
     contactDiv.classList.add('contact-info');
     var buttonEl = document.createElement('button');
     buttonEl.textContent = 'Add to favourite';
     contactDiv.appendChild(buttonEl);
     var aTel = document.createElement('a');
+    aTel.setAttribute('id','callmeMain');
     aTel.setAttribute('href', `tel:${itemsArray[i].phone}`);
-    aTel.textContent = 'Click to Call!';
+    // aTel.textContent = 'Click to Call!';
     contactDiv.appendChild(aTel);
-
      itemsLI.appendChild(contactDiv);
+     
   
   
     var addToCart = document.createElement('p');
@@ -141,19 +154,21 @@ console.log(listSelector);
 
 
 for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
-  console.log(listSelector[eventCount]);
+  // console.log(listSelector[eventCount]);
   // console.log(listSelector.length);
+  console.log(eventCount);
   listSelector[eventCount].addEventListener('click', function (event) {
     event.preventDefault();
-    console.log(event.target.id);
+    // console.log(event.target.id);
     var theTarget = event.target;
-    console.log(itemsArray[Number(theTarget.id.substring(4))]);
-    console.log((theTarget.id.substring(4)));
+    // console.log(itemsArray[Number(theTarget.id.substring(4))]);
+    // console.log((theTarget.id.substring(4)));
     if (theTarget.id ===`item${Number(theTarget.id.substring(4))}`){
     var selectedEl = document.getElementById(`list${Number(theTarget.id.substring(4))}`);
     pickedArr.push(itemsArray[Number(theTarget.id.substring(4))]);
-    setItemCart();
     console.log(pickedArr);
+    setItemCart();
+    
 
     }
   });
