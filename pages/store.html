@@ -19,7 +19,7 @@
 
     <title>Store</title>
 </head>
-<body>
+<body style="background-image: url(../img/gradient_light_dark_background_51893_2560x1600.jpg);">
     <header>
             <h1>MotoSpare</h1>
             <img class="logo" src="../img/logo_new.png" alt="logo">
@@ -33,7 +33,7 @@
 
     <main>
 
-        <div class="motto">
+        <!-- <div class="motto">
             <div class="container">
                 <div class="row">
                    <div class="neons col-12">
@@ -41,7 +41,7 @@
                    </div>
                 </div>
              </div>
-        </div>
+        </div> -->
 
         <div class="store-bg">
             <button class="buttonpluse" onclick="displayForm()">+</button>
@@ -64,7 +64,7 @@
         </div>
 
         <div class="items-list" id="itemsDiv">
-            <h3> Items</h3>
+            <h3>Our store items</h3>
             <ul id="items">
                     
             </ul>
@@ -88,13 +88,13 @@
                 </ol>
 
             </div>
-            <div class="contact">
-                <ol><h5> Contact Us</h5>
-                    <li>Phone Number :+962 785311513</li>
-                    <li>Email : blitzCrank@gmail.com </li>
-                    
-                </ol>
-            </div>
+            <div class="contact hover-foot">
+                <ul class="ul-foot-contact">
+                  <h5> Contact Us</h5>
+                  <li>Phone Number :+962 785311513</li>
+                  <li>Email : blitzCrank@gmail.com </li>
+                </ul>
+              </div>
             <div class="socialMedia">
                 <ol> <h5>Follow Us </h5>
                     <li><a href="#" class="fa fa-facebook"></a></li>
@@ -117,11 +117,15 @@
         
         function displayForm() {
             document.getElementById('saleForm').style.display = 'block';
+            document.getElementById('buttonpluse').style.display = 'none';
+            document.getElementById('buttonMi').style.display = 'block';
+            
           }
-        
-        function unDisplayForm() {
-    document.getElementById('saleForm').style.display = 'none';
-  }
+          function unDisplayForm() {
+            document.getElementById('saleForm').style.display = 'none';
+            document.getElementById('buttonMi').style.display = 'none';
+            document.getElementById('buttonpluse').style.display = 'block';
+          }
       function refreshPage(){
             window.location.reload();
         }     
