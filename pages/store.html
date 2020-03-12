@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css?family=Changa|Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -10,12 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Simonetta:400,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Viaoda+Libre&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Knewave|Lobster|Satisfy|Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Crete+Round|Oswald|Sen|Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/store.css">
     <title>Store</title>
 </head>
-<body>
+<body style="background-image: url(../img/gradient_light_dark_background_51893_2560x1600.jpg);">
     <header>
             <h1>MotoSpare</h1>
             <img class="logo" src="../img/logo_new.png" alt="logo">
@@ -28,7 +32,7 @@
     </header>
     <main>
 
-      <div class="best-container">
+      <!-- <div class="best-container">
         <div class="weGive">
           <span class="we">With us</span><span class="give">you can sell</span><span class="you"></span>
         </div>
@@ -36,7 +40,7 @@
       </div>
       <div class="car-background"
         style="background-image: url(img/1920x1080_A1814532_large.webp); background-repeat: no-repeat;background-size: cover;">
-      </div>
+      </div> -->
 
         <!-- <div class="motto">
             <div class="container">
@@ -49,8 +53,10 @@
         </div> -->
 
         <div class="store-bg">
-            <button class="buttonpluse" onclick="displayForm()">+</button>
-            <form id="saleForm"> 
+            <button class="buttonpluse" id="buttonpluse" onclick="displayForm()">+</button>
+            <button class="buttonMi" id="buttonMi" onclick="unDisplayForm()" style="display: none;">-</button>
+
+            <form id="saleForm" style="display: none;"> 
               <fieldset>
                 <label>Full Name</label>
                   <input type="text" name="name" placeholder="Enter your Name">
@@ -68,7 +74,7 @@
             </form>
         </div>
         <div class="items-list" id="itemsDiv">
-            <h3> Items</h3>
+            <h3>Our Store Items</h3>
             <ul id="items">
                     
             </ul>
@@ -91,12 +97,12 @@
                     <li><a href="">Yousef Alshun</a></li>
                 </ol>
             </div>
-            <div class="contact">
-                <ol><h5> Contact Us</h5>
-                    <li>Phone Number :+962 785311513</li>
-                    <li>Email : blitzCrank@gmail.com </li>
-                    
-                </ol>
+            <div class="contact hover-foot">
+              <ul class="ul-foot-contact">
+                <h5> Contact Us</h5>
+                <li>Phone Number :+962 785311513</li>
+                <li>Email : blitzCrank@gmail.com </li>
+              </ul>
             </div>
             <div class="socialMedia">
                 <ol> <h5>Follow Us </h5>
@@ -119,8 +125,22 @@
         
         function displayForm() {
             document.getElementById('saleForm').style.display = 'block';
+            document.getElementById('buttonpluse').style.display = 'none';
+            document.getElementById('buttonMi').style.display = 'block';
+            
           }
-         
+          function unDisplayForm() {
+            document.getElementById('saleForm').style.display = 'none';
+            document.getElementById('buttonMi').style.display = 'none';
+            document.getElementById('buttonpluse').style.display = 'block';
+
+          } 
+        // function displayMi(){
+          
+        // }
+        // function displaypluse(){
+          
+        //  }
     </script>
         <script src="../js/store.js"></script>
   </body>

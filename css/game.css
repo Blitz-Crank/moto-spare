@@ -1,0 +1,355 @@
+/* CSS for the header */
+header {
+    display: block;
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px;
+    position: sticky;
+    font-family: 'Righteous', cursive;
+    width:100%;
+    height: 100px;
+}
+header h1{
+    font-family: 'Righteous', cursive;
+    font-size:36px;
+    font-weight: bold;
+    margin-left: 91px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ header ul{
+    margin-left: 336px;
+    margin-top: -42px;
+    margin-bottom: 20px;
+    margin-left: 871px;}
+ul li {
+    display: inline;
+    padding: 23px;
+    color:white;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    transition: font-size 1s;
+}
+.hover-a a:hover{
+font-size: 20px;
+color: white;
+text-decoration: none;
+}
+#bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    }
+    * {box-sizing:border-box}
+header .logo{
+    float: left;
+    width: 93px;
+    margin-top: -87px;
+    margin-left: -2px;
+}
+body{
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+main{
+    height: 80%;
+    width: 100%;
+}
+section div {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    box-shadow: 5px 10px #80808073;
+    padding: 1px;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    margin-right: -85px;
+
+}
+p {
+    font-size: 30px;
+    text-align: center;
+    padding: 60px;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.test {
+    animation: fadein 2s;
+    margin-top: 112px;
+    margin-left: 259px;
+    background-color: #a0c29f;
+    margin-bottom: 49px;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+/* footer css */
+footer {
+    width : 100%;
+    position: absolute;
+    bottom: 0;
+    /* font-family: 'Righteous', cursive; */
+    font-family: 'Signika', sans-serif;
+        margin-bottom: -205px;
+    /* background-color: #343839; */
+    }
+    
+    .lastSection{
+    position: relative ;
+    padding: 20px 0px ;
+    background-color: rgba(31, 27, 27, 0.6);
+    height: 158px;
+    border-block-end: 1px solid white;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: -126px;    }
+    
+    .footLogo{
+    float: left;
+    width: 74px;
+    position: absolute;
+    left: 1px;
+    top: 28px;
+    }
+    
+    .bottomlogo{
+    float: left;
+    width: 75px;
+    position: absolute;
+    left: 1px;
+    top: 23px;
+    font-size: 20px;
+    }
+    footer h2{
+    font-family: 'Righteous', cursive;
+    left: 19ps;
+    padding-left: 70px;
+    padding-top: 52px;
+    font-size: 20px;
+    }
+    .aboutAs{
+    position: absolute ;
+    top : 20%;
+    left: 22%;
+    text-align: center ;
+    font-size: 12px;
+    }
+    .contact {
+      position: absolute;
+      top: 16%;
+      left: 51%;
+      text-align: center;
+      font-size: 12px;
+    }
+    
+    .socialMedia{
+    position: absolute ;
+    top: 20%;
+    left : 80%;
+    text-align: center ;
+    font-size: 12px;
+    }
+    
+    h5 {
+    font-size: 20px;
+    padding-bottom: 15px;}
+    
+    .tail {
+    background-color: rgba(31, 27, 27, 0.6);
+    width: 100%;
+    }
+    
+    .tail ol li {
+    display: inline;
+    padding-left: 19%;
+    color: white;
+    text-align: center;
+    }
+    
+    ol li a{
+    color: white;
+    } 
+    .black{
+    background-color: rgba(31, 27, 27, 0.6);
+    margin-bottom: -1px;    padding-bottom: 11px;
+    margin-top: 124px;
+    padding-top: 25px;
+    }
+    
+    .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    width: 20px;
+    height: 15px;
+    font-size: 19px;
+    margin: 2px;
+    padding: 2px;
+    }
+    
+    .fa:hover {
+      opacity: 0.7;
+    }
+    
+    .fa-facebook {
+    
+    color: white;
+    padding: 6px;
+    transition: font-size 1s;
+    
+    }
+    
+    .fa-twitter {
+    
+    color: white;
+    padding: 6px;
+    transition: font-size 1s;
+    
+    }
+    
+    .fa-google {
+    
+    color: white;
+    padding: 6px;
+    transition: font-size 1s;
+    
+    }
+    
+    ol li {
+    padding: 6px;
+    display: inline;
+    
+    }
+    a  {
+    transition: font-size 1s;
+    
+    }
+    ol{
+    padding-top: 18px;
+    }
+     .hover-foot a:hover{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    }
+    .ul-foot-contact li {
+      display: block;
+      padding: 7px;
+    }
+
+    /* main css */
+    
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #FEFEFE;
+    margin: 10% auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    height: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 10px 16px;
+    background-color: #ACC22E;
+    color: white;
+  }
+  
+  .modal-body {padding: 20px 16px; background-color: white;}
+  
+  button {
+    background-color: rgb(204, 179, 88); 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left:668px;
+    margin-bottom: 271px;
+  }
+  button:active {
+    background-color: #3E8E41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+.weel:hover{
+        background-color:   #ffffb3;  }
+.mirror:hover{
+        background-color:   #ffffb3;  }
+.break:hover{
+        background-color:   #ffffb3;  }
+.stearing:hover{
+        background-color:   #ffffb3;  }
+.light:hover{
+        background-color:   #ffffb3;  }

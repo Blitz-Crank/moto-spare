@@ -4,146 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Changa|Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Simonetta:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Satisfy|Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/cart.css">
-    <title>cart-page</title>
-    
+    <title>Cart</title>
 </head>
-<body>
+<body style = "background-image: url(../img/gradient_light_dark_background_51893_2560x1600.jpg)">
     <header>
-        <div class="style-header">
-          <h1>MotoSpare</h1>
-          <img class="logo" src="../img/logo_new.png" alt="logo">
-          <ul class="hover-a">
-            <li><a href="">Home</a></li>
-            <li><a href="">Store</a></li>
-            <li><a href="">Sale</a></li>
-            <li><a href="">About Us</a></li>
-          </ul>
+        <h1>MotoSpare</h1>
+        <img class="logo" src="../img/logo_new.png" alt="logo">
+        <ul class="hover-a">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="cart.html">My Favourite</a></li>
+            <li><a href="aboutUs.html">About Us</a></li></ul>
+    
+</header>
+    <main>
+        <div class="tableDiv">
+            <table id="table">
+                <th>
+                    <td>Item Photo</td>
+                    <td>Item Name </td>
+                    <td>Price</td>
+                    <td>Phone</td>
+                    <td>Delete Item </td>
+                </th>
+            </table>
         </div>
-    
-      </header>
-
-<main>
-    <h1>Shopping Cart</h1>
-{if #cart.updateForm.errors}
-  <ul class="errors">
-  {loop items="#cart.updateForm.errors" value="error"}
-    <li>{#error.message}</li>
-  {/loop}
-  </ul>
-{/if}
-{#cart.updateForm.tag.open}
-  <a href="{#cart.urls.continueShopping}" class="continue-shopping">Continue Shopping</a>
-  <a href="{#cart.urls.checkout}" class="checkout-button">Checkout</a>
-  <table cellspacing="0" class="shopping-cart">
-    <thead>
-      <tr class="headings">
-        <th class="link">&nbsp;</td>
-        <th class="product">Item</td>
-        <th class="price">Price</td>
-        <th class="quantity">Quantity</td>
-        <th class="price">Total</td>
-      </tr>
-    </thead>
-    <tbody>
-    {loop items="#cart.products" value="product"}
-      <tr> 
-        <td class="link"><label>{#product.fields.remove.tag} remove</label></td>
-        <td class="product">
-          <div class="product-img"><a href="{#product.url}">{#product.primaryImages.thumb.tag}</a></div>
-          <div class="product-name">
-            <a href="{#product.url}">{#product.productName}</a>
-            {loop items="#product.options" value="option"}
-              <br />{#option.label}: {#option.value}
-            {/loop}
-          </div>
-        </td>
-        <td class="price">
-          {#product.currentPrice.value}{if #product.pricePerUnit exists && #product.pricePerUnit != "None"} / {#product.pricePerUnit}{/if}
-        </td>
-        <td class="quantity">
-          {#product.fields.quantity.tag}{#product.fields.partialQuantity.tag}
-        </td>
-        <td class="price">{#product.totalPrice.value}</td>
-      </tr>
-    {/loop} 
-    {if #cart.coupons}
-      <tr>
-        <td class="quantity-span" colspan="4">Subtotal</td>
-        <td class="price">{#cart.cartTotalBeforeDiscounts.value}</td>
-      </tr>
-      {loop items="#cart.coupons" value="coupon"}
-        <tr>
-          <td class="quantity-span" colspan="4">{#coupon.name} ({#coupon.code})</td>
-          <td class="price">-{#coupon.savingsValue}</td>
-        </tr>
-      {/loop}
-    {/if}
- 
-      <tr class="totals">
-        <td colspan="2"><input type="submit" name="submit" value="Update cart" /></td>
-        <td class="quantity-span" colspan="2">Total</td>
-        <td class="price">{#cart.cartTotal.value}</td>
-      </tr> 
-    </tbody>
-  </table>
-{#cart.updateForm.tag.close}
-{#cart.updateForm.tag.open}
-  <div class="coupon">
-    Have a coupon? {#cart.updateForm.fields.coupon.tag} <input type="submit" value="Apply" />
-  </div>
-{#cart.updateForm.tag.close}
-<div style="clear: both;"></div>
-<a href="{#cart.urls.continueShopping}" class="continue-shopping">Continue Shopping</a>
-<a href="{#cart.urls.checkout}" class="checkout-button">Checkout</a>
-</main>
-    
-  <footer>
-    <section class="lastSection text">
-      <div class="footLogo">
-        <img class='bottomlogo' src="../img/logo_new.png" alt="logo" />
-        <h2>
-          MotoSpare
-        </h2>
-      </div>
-      <div class="aboutAs hover-foot">
-        <ol>
-          <h5>Meet the developers </h5>
-          <li><a href="">Israa Othman</a></li>
-          <li><a href="">Omar Alawi</a></li>
-          <li><a href="">Raghad Alquran</a></li>
-          <li><a href="">Yousef Alshun</a></li>
-        </ol>
-
-      </div>
-      <div class="contact hover-foot">
-        <ol>
-          <h5> Contact Us</h5>
-          <li>Phone Number :+962 785311513</li>
-          <li>Email : blitzCrank@gmail.com </li>
-
-        </ol>
-      </div>
-      <div class="socialMedia hover-foot">
-        <ol>
-          <h5>Follow Us </h5>
-          <li><a href="#" class="fa fa-facebook"></a></li>
-          <li><a href="#" class="fa fa-twitter"></a></li>
-          <li><a href="#" class="fa fa-google"></a></li>
-        </ol>
-      </div>
-    </section>
-    <span  class="blackBackground  text tail">
-      <ol class="black">
-          <li>© 2020 Moto Spare, Inc.</li>
-          <li>Privacy Policy</li>
-          <li>Alpha version </li>
-      </ol>
-      </span> 
-  </footer>
-    
+    </main>
+    <footer>
+        <section class="lastSection text">
+            <div class="footLogo">
+            
+                <img class= 'bottomlogo' src="../img/logo_new.png" alt="logo"/>
+                <h2>
+                    MotoSpare
+                </h2>
+            </div>
+            <div class=" aboutAs" >
+                <ol> <h5>Meet the developers </h5>
+                    <li><a href="">Israa Othman</a></li>
+                    <li><a href="">Omar Alawi</a></li>
+                    <li><a href="">Raghad Alquran</a></li>
+                    <li><a href="">Yousef Alshun</a></li>
+                </ol>
+            </div>
+            <div class="contact hover-foot">
+                <ul class="ul-foot-contact">
+                  <h5> Contact Us</h5>
+                  <li>Phone Number :+962 785311513</li>
+                  <li>Email : blitzCrank@gmail.com </li>
+                </ul>
+              </div>
+            </div>
+            <div class="socialMedia">
+                <ol> <h5>Follow Us </h5>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-google"></a></li>            
+                </ol>
+            </div>   
+        </section>
+        <span  class="blackBackground  text tail">
+            <ol class="black">
+                <li>© 2020 Moto Spare, Inc.</li>
+                <li>Privacy Policy</li>
+                <li>Alpha version </li>
+            </ol>
+            </span> 
+    </footer>
+    <script src="../js/store.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>
