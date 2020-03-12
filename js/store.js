@@ -164,10 +164,13 @@ for (var eventCount = 0; eventCount < listSelector.length; eventCount++) {
     // console.log(itemsArray[Number(theTarget.id.substring(4))]);
     // console.log((theTarget.id.substring(4)));
     if (theTarget.id ===`item${Number(theTarget.id.substring(4))}`){
-    var selectedEl = document.getElementById(`list${Number(theTarget.id.substring(4))}`);
+    var selectedEl = document.getElementById(`item${Number(theTarget.id.substring(4))}`);
     pickedArr.push(itemsArray[Number(theTarget.id.substring(4))]);
     console.log(pickedArr);
     setItemCart();
+    selectedEl.textContent = 'added';
+    selectedEl.style.backgroundColor = 'red';
+
     
 
     }
