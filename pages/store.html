@@ -49,16 +49,16 @@
             <form id="saleForm" style="display: none;"> 
               <fieldset>
                 <label>Full Name</label>
-                  <input type="text" name="name" placeholder="Enter your Name">
+                  <input type="text" name="name" placeholder="Enter your Name" required>
                 <label>Phone Number</label>
-                  <input type="text" name="phone" placeholder="Enter your Phone Number">
+                  <input type="text" name="phone" placeholder="Enter your Phone Number" required>
                 <label>Item</label>
-                  <input type="text" name="itemName" placeholder="The Item ">
+                  <input type="text" name="itemName" placeholder="The Item " required>
                 <label>Price</label>
-                  <input type="text" name="prise" placeholder="The Item Prise ">
+                  <input type="text" name="prise" placeholder="The Item Prise " required>
                 <label for="itemPhoto">Select an Image:</label>
                 <!-- accept='image/*' onchange='openFile(event)' -->
-                 <input type="file" id="itemPhoto" name="itemPhoto ">          
+                 <input type="file" id="itemPhoto" name="itemPhoto " required>          
                  <button type="submit" class="submitButton" onclick="refreshPage()">Submit </button>
               </fieldset>
             </form>

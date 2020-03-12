@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Lemonada|Special+Elite|Viaoda+Libre&display=swap');
 body{
   position: relative;
-  /* background-image: url("https://1-station.com/wp-content/uploads/2017/09/Image-1.jpg" );*/
   background-repeat: no-repeat;
   background-size: cover; 
-  /* background-color: #4E5050; */
   height: 1500px;
 }
 main {
@@ -41,18 +39,7 @@ text-align: center;
 -moz-animation: glow 2s ease-in-out infinite alternate;
 animation: glow 2s ease-in-out infinite alternate;
 }
-/* 
-@-webkit-keyframes glow {
-   from {
-    color: #fff;
-  text-shadow: 0 0 10px #00FFF2, 0 0 20px #00FFF2, 0 0 30px #00FFF2, 0 0 40px #00FFF2, 0 0 50px #00FFF2, 0 0 60px #00FFF2, 0 0 70px #00FFF2, 0 0 90px #00FFF2;
-}
-to {
-   color: gray;
-  text-shadow: 0 0 20px #00FFF2, 0 0 30px #00FFF2, 0 0 40px #00FFF2, 0 0 50px #00FFF2, 0 0 60px #00FFF2, 0 0 70px #00FFF2, 0 0 80px #00FFF2, 0 1 90px #00FFF2;
-}
-} */
-/*  */
+
 /* form Area */
 .store-bg {
   height: 700px;
@@ -60,18 +47,6 @@ to {
   width: 30%;
   float: right;
   margin-top: -26px;}
-/* .store-bg:after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: 9;
-  height: 700px;
-} */
 .buttonMi{
   background-color: #9FAF7E;
   border: none;
@@ -126,7 +101,7 @@ to {
   z-index: 9999;
   float: right;
   position: relative;
-  background-color: #D2D996;  margin-top: -52px;
+  background-color: #ecc46bc9;  margin-top: -52px;
   border-radius: 40px
   }
 #saleForm label {
@@ -213,9 +188,10 @@ li img {
 }
 h3{
   font-size: 45px;
-      color: #f19b06cc;
-    font-family: 'Special Elite', cursive;
-    padding: 15px;
+  color:#171513cc;
+  font-family: 'Special Elite', cursive;
+  padding: 15px;
+  font-weight: bold;
 }
 h3:hover{
   font-size: 50px;
@@ -247,7 +223,9 @@ ol li {
   display: block;
   padding: 0px;
   }
+    
 button:hover{
+  
   background-color: #C95353;
   border: 1px solid #1B2B2A;
   color: white;
