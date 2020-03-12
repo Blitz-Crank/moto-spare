@@ -30,8 +30,8 @@ div#cont {
     left: 40%;
     animation-name: tl;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -43,8 +43,8 @@ div#cont {
     /* display: none; */
     animation-name: tr;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-delay: 2s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -55,8 +55,8 @@ div#cont {
     /* display: none; */
     animation-name: tl;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-delay: 4.5s;
+    animation-duration: 2s;
+    animation-delay: 3s;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -67,8 +67,8 @@ div#cont {
     /* display: none; */
     animation-name: br;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-    animation-delay: 6s;
+    animation-duration: 2s;
+    animation-delay: 4s;
     opacity: 0;
     animation-fill-mode: forwards;
 }

@@ -19,7 +19,7 @@
 
     <title>Store</title>
 </head>
-<body style="background-image: url(../img/gradient_light_dark_background_51893_2560x1600.jpg);">
+<body style="background-image: url(../img/newback3.jpg);">
     <header>
             <h1>MotoSpare</h1>
             <img class="logo" src="../img/logo_new.png" alt="logo">
@@ -48,16 +48,16 @@
             <form id="saleForm"> 
               <fieldset>
                 <label>Full Name</label>
-                  <input type="text" name="name" placeholder="Enter your Name">
+                  <input type="text" name="name" placeholder="Enter your Name" required>
                 <label>Phone Number</label>
-                  <input type="text" name="phone" placeholder="Enter your Phone Number">
+                  <input type="text" name="phone" placeholder="Enter your Phone Number" required>
                 <label>Item</label>
-                  <input type="text" name="itemName" placeholder="The Item ">
+                  <input type="text" name="itemName" placeholder="The Item " required>
                 <label>Price</label>
-                  <input type="text" name="prise" placeholder="The Item Prise ">
+                  <input type="text" name="prise" placeholder="The Item Prise " required>
                 <label for="itemPhoto">Select an Image:</label>
                 <!-- accept='image/*' onchange='openFile(event)' -->
-                 <input type="file" id="itemPhoto" name="itemPhoto ">          
+                 <input type="file" id="itemPhoto" name="itemPhoto " required>          
                  <button type="submit" class="submitButton" onclick="refreshPage()">Submit </button>
               </fieldset>
             </form>
