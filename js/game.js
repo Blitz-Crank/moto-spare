@@ -26,9 +26,9 @@ window.onclick = function(event) {
 };
 var Uname = prompt('Welcome to our Gussing Game, Whats your name ?');
 if(confirm(`Hello  ${ Uname } are you ready for the game ? :) `)){
-  alert('OK lets Start ..... ');}
+  alert('CLICK on the boxes to show the questions ... :P ');}
 else {
-  alert('Why not ... Just try it and you will like it ... ');
+  alert('Why not ... Just CLICK on the boxes to show the questions... ');
 }
 var sec = document.querySelector('#section');
 
@@ -43,13 +43,13 @@ function question (e){
       console.log(score);
     }
     else {
-      alert('No .. I am a Weel ');
+      alert('No .. I am a Wheel ');
     }
     var weell = document.getElementById('weel');
     weell.style.backgroundImage = 'url(\'../img/weels.png\')';
     weell.style.backgroundSize = 'cover';
   }else if (e.target.id === 'mirror'){
-    var mirror =prompt('Guess who I am .... I am on the right, left and middle of the car , you use me to see the cars behind you  ??? ').toLowerCase();
+    var mirror =prompt('Guess who I am .... I am on the right, left and middle of the car , The girls use me only to check thier "MAKEUP" ??? ').toLowerCase();
     if(mirror === 'mirror'){
       alert('Correct I am a Mirror ..');
       score++; 
@@ -76,7 +76,7 @@ function question (e){
     breakss.style.backgroundSize = 'cover';
   }else if (e.target.id === 'stearing'){
     var stearing =prompt('Guess who I am .... I am the wheel that used to steer the car ??? ').toLowerCase();
-    if(stearing === 'steering'){
+    if(stearing === 'stearing'){
       alert('Correct I am the Steering ..');
       score++;
       console.log(score);}
@@ -87,7 +87,7 @@ function question (e){
     stearingg.style.backgroundImage = 'url(\'../img/steering-wheel-png.jpg\')';
     stearingg.style.backgroundSize = 'cover';
   }else if (e.target.id === 'light'){
-    var light =prompt('Guess who I am .... II turn on at night to light the way in front of the car  ??? ').toLowerCase();
+    var light =prompt('Guess who I am .... I turn on at night to light the way in front of the car  ??? ').toLowerCase();
     if(light === 'light' || light === 'lights'){
       alert('Correct I am the car Lights ..');
       score++; console.log(score);}
@@ -101,4 +101,6 @@ function question (e){
   alertScore.textContent = `Great job .... your Score is : ${score} / 5 `;
 
 }
+
+
 

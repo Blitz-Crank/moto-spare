@@ -86,6 +86,10 @@ p {
     background-color: #A0C29F;
     margin-bottom: 49px;
 }
+.bt{
+    animation: fadein 2s;
+}
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -101,7 +105,7 @@ footer {
     bottom: 0;
     /* font-family: 'Righteous', cursive; */
     font-family: 'Signika', sans-serif;
-        margin-bottom: -205px;
+    margin-bottom: -252px;
     /* background-color: #343839; */
     }
     
@@ -347,3 +351,14 @@ footer {
         background-color:   #FFFFB3;  }
 .light:hover{
         background-color:   #FFFFB3;  }
+
+
+div#stearing {
+ margin-left: -685px;
+ margin-bottom: -290px;
+        }
+
+div#light {
+    margin-bottom: -290px;
+}
+
