@@ -173,6 +173,10 @@ footer ul {
   margin-bottom: 20px;
   margin-left: 15px;
 }
+/* ul li a{
+  display: block;
+} */
+
  .ul-foot-contact li {
   display: block;
   padding: 7px;

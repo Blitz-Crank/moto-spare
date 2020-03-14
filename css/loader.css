@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   background-color: #333;
-  animation: remove-loader 8s forwards;
+  animation: remove-loader 10s forwards;
 }
 .loader-div .loader {
   width: 11.7em;

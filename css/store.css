@@ -17,28 +17,7 @@ h3{
   text-align: center;
   margin-left: 0px;
 }
-/* neon part  */
-@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
-.motto {
- width: 431px;
- height: 0px;
- display: flex;
- justify-content: center;
- align-items: center;
- font-family: 'Codystar';
-}
-.neons {
- margin-top: 10rem;
- text-align: center;
-}
-.neons h3 {
-font-size: 25px;
-text-align: center;
- font-weight: bold;
--webkit-animation: glow 2s ease-in-out infinite alternate;
--moz-animation: glow 2s ease-in-out infinite alternate;
-animation: glow 2s ease-in-out infinite alternate;
-}
+
 
 /* form Area */
 .store-bg {
@@ -152,8 +131,8 @@ li img {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .items-list h3{
-  margin: 0 151px 42px -399px; }
-  .items-list {
+  margin: -3px 78px -35px -18px;
+}  .items-list {
     color: #504E4E;
     float: left;
     display: inline-block;
@@ -184,7 +163,7 @@ li img {
   position: relative;
   clear: right;
   float: left;
-  background-color: #9694754f;
+  background-color: #41525a;
 }
 h3{
   font-size: 45px;
@@ -289,7 +268,7 @@ position: absolute;
 bottom: 0;
 /* font-family: 'Righteous', cursive; */
 font-family: 'Signika', sans-serif;
-    margin-bottom: -205px;
+margin-bottom: -844px;
 /* background-color: #343839; */
 }
 .lastSection{
@@ -332,11 +311,18 @@ font-size: 12px;
 }
 .contact {
   position: absolute;
-  top: 52%;
-  left: -11%;
+  top: 26%;
+  left: 55%;
   text-align: center;
   font-size: 12px;
 }
+.ul-foot-contact  a {
+  display: inline;
+}
+.ul-foot-contact a{
+  display: block;
+}
+
 .socialMedia{
 position: absolute ;
 top: 20%;
