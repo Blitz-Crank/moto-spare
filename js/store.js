@@ -29,6 +29,11 @@ function renderNewItem() {
     // console.log(StoreItems.itemsArray[StoreItems.itemsArray.length-1].itemPhoto);
     img.setAttribute('src', itemsArray[i].itemPhoto);
     itemsLI.appendChild(img);
+
+    var clinetName = document.createElement('p');
+    clinetName.classList.add('item-name');
+    clinetName.textContent = `Seller Name : ${itemsArray[i].name}`;
+    itemsLI.appendChild(clinetName);
   
   
     var nameLi = document.createElement('p');
@@ -39,7 +44,7 @@ function renderNewItem() {
   
     var priseLi = document.createElement('p');
     priseLi.classList.add('price');
-    priseLi.textContent = `prise : ${itemsArray[i].prise}`;
+    priseLi.textContent = `price : ${itemsArray[i].prise}`;
     // console.log(itemsArray[0]);
     itemsLI.appendChild(priseLi);
   
